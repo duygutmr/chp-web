@@ -1,0 +1,97 @@
+.management-share{
+    //  margin-left: 30px; 
+      margin-left: 32px; 
+      margin-top: 1px;
+      &:hover .management-share-icon-hidden{
+        display: block;
+        animation: slide-in .5s ease;
+     }
+      &-icon{
+         justify-content: center;
+         align-items: center;
+         background-color: white;
+         &:hover{
+            cursor: pointer;              
+         }
+
+         &-show{                 
+            & img{
+               padding: 10px;
+               border: 1px solid $gray;             
+            }
+            &:hover + .management-share-icon-show{
+               display: none;
+            }
+         }
+         &-hidden{
+            display: none;
+            position: relative;              
+            
+            &-content{
+               position: absolute;
+               background-color: white;  
+               top:-23px;
+               left: -181px;
+               & .active-share img{
+                background-color: $primary;                  
+                border-left: 1px solid $gray;
+                }
+               & a{
+                & img{
+                  padding: 10px;
+                  border: 1px solid $gray;
+                  border-left: 0;
+                  &:hover{
+                     border: solid 1px #9bb1be;
+                  }
+               }
+                & a:last-child img{
+                    background-color: white;
+                }
+               }
+            }
+         }
+      }
+      &-text{
+         font-family: Gotham-Bold;
+         justify-content: center;
+         align-items: center;
+         width: 95px;  
+         color: $primary;
+         background-color: white;
+         border: 1px solid $gray;
+         border-left: 0;
+         & a{
+            color: $primary;
+            font-family: Gotham-Bold;
+            line-height: 1.86;
+         }
+         &:hover{
+            cursor: pointer;
+         }
+      }
+   }
+
+@keyframes slide-in {
+   0% { opacity: 0; }    
+ 100% { opacity: 1; }
+}
+@media screen and (max-width:768px) {
+   .management-share{
+      margin-left: 5px; 
+      &-icon{
+         justify-content: center;
+         align-items: center;
+      }
+   }
+}
+
+@media screen and (max-width:415px) {
+   .management-share{
+      margin-left: 0px; 
+      &-icon{
+         justify-content: center;
+         align-items: center;
+      }
+   }
+}

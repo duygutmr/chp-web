@@ -1,0 +1,16 @@
+{% extends "Base.html" %}
+{% block title %}
+CHP Corporate Identity
+{% endblock %}
+
+
+{% block page_content %}
+{% include "components/corporateIdentity-Title.html" %}
+<div class="corporateIdentity-Page">
+    <div class="container">
+        {% include "components/corporateIdentity-Page.html" %}
+    </div>
+</div>
+
+{% include "components/Newsletter-Subscription.html" %}
+{% endblock %}

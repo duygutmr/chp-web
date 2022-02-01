@@ -1,0 +1,202 @@
+.corporateIdentity {
+    overflow: hidden;
+}
+.corporateIdentity-Page {
+    background-color: #f8f8f8;
+    border-top: 1px solid #dcdcdc;
+}
+
+@media screen and (max-width: 415px) {
+    .corporateIdentity-Page {
+        padding: 20px;
+    }
+}
+
+.corporateIdentity-titles {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding: 100px 30px 40px 0;
+    border-left: 1px solid $gray;
+    border-right: 1px solid $gray;
+
+    h2 {
+        border-left: 2px solid #ff0000;
+        padding: 10px 16px 0 24px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .corporateIdentity-titles {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        text-transform: uppercase;
+        padding-top: 66px;
+        padding-right: 0;
+    }
+    .corporateIdentity-titles-show {
+        display: none !important;
+    }
+}
+
+.corporateIdentity {
+    border-right: 1px solid $gray;
+    border-left: 1px solid $gray;
+    .corp-image {
+        width: 100%;
+    }
+
+    .newsOneLine-box {
+        padding-bottom: 100px;
+
+    }
+}
+
+.corporateIdentity-card-content {
+    img {
+        float: right;
+    }
+
+    h2 {
+        font-size: 36px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        text-align: left;
+        color: #063d5d;
+        padding: 20px;
+        padding-bottom: 80px;
+
+        img {
+            padding-top: 12px;
+        }
+    }
+
+    h4 {
+        padding: 16px 0 40px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.38;
+        letter-spacing: normal;
+        text-align: left;
+        color: #063d5d;
+    }
+
+}
+
+@media screen and (max-width: 415px) {
+    .corporateIdentity {
+        .journal-blocks {
+            align-items: center;
+            padding-right: 0;
+            display: inline;
+            width: 100%;
+            border-right: 1px solid #dcdcdc;
+        }
+
+        .sub-management-news-card {
+            #corporateIdentity-image {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .corporateIdentity {
+        #corporateIdentity-subimage {
+            width: 100%;
+        }
+
+        .corporateIdentity-card-content {
+            img {
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sub-management-news-card {
+        #corporateIdentity-image {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and(max-width: 768px) {
+    .corporateIdentity-card-content {
+        h2 {
+            font-size: 16px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.38;
+            letter-spacing: normal;
+            text-align: left;
+            color: #063d5d;
+
+            img {
+                padding-top: 0px;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 415px) {
+    .corporateIdentity-card-content {
+        h2 {
+            font-size: 16px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.38;
+            letter-spacing: normal;
+            text-align: left;
+            color: #063d5d;
+
+            img {
+                padding-top: 0px;
+            }
+        }
+
+        h4 {
+            font-size: 16px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.38;
+            letter-spacing: normal;
+            text-align: left;
+            color: #063d5d;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .corporateIdentity {
+        .sub-management-news-card {
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .corporateIdentity {
+        .sub-management-news-card {
+            width: 100%;
+        }
+    }
+}

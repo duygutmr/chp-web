@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+    <defs>
+        <style>
+            .cls-2{fill:none}
+        </style>
+    </defs>
+    <g id="button.icon.mail" transform="translate(-968 -267)">
+        <g id="boundry" fill="#fff" stroke="#dcdcdc" transform="translate(968 267)">
+            <circle cx="24" cy="24" r="24" stroke="none"/>
+            <circle cx="24" cy="24" r="23.5" class="cls-2"/>
+        </g>
+        <g id="Mail" transform="translate(980 279)">
+            <path id="Path_4975" d="M0 0h24v24H0z" class="cls-2"/>
+            <path id="Path_4976" fill="#063d5d" d="M22 4H2.01v16H22zm-2 4l-8 5-8-5V6l8 5 8-5z"/>
+        </g>
+    </g>
+</svg>

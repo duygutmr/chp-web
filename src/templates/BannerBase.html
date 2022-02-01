@@ -1,0 +1,837 @@
+{% extends "Layout.html" %}
+
+{% block body_attr %}
+{% endblock %}
+
+
+{% block content %}
+
+<!-- {% include "components/header-banner.html" %} -->
+<!-- {% include "components/header-video-banner.html" %} -->
+{% include "components/header-live-banner.html" %}
+
+<header>
+    <div class="banner-cage">
+        <div class="container d-flex justify-content-end align-items-center banner-cage-reverse">
+            <p class="banner-text hide-mobile">“Benim iki büyük eserim var; biri Türkiye Cumhuriyet’i diğeri Cumhuriyet
+                Halk
+                Partisi.”</p>
+            <img class="banner-image" src="../assets/img/header-banner-img-3.png" alt="headerTopBannerImage">
+        </div>
+    </div>
+
+    <div class="navigation cage hide-mobile-device">
+        <div class="container">
+            <nav class="navigation navbar navbar-expand-lg">
+                <img class="navigation-icon" src="../assets/img/CHP-Dikey-Logo-2.png" alt="headerNavigationIcon">
+                <div class="collapse navbar-collapse justify-content-end">
+                    <ul class="navbar-nav">
+                        <li class=" nav-item dropdown ">
+                            <a class="navigation link-button text" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">CHP</a>
+                            <div class="dropdown-content">
+                                <div class="dropdown-content-text">
+                                    <div class="dropdown-content-subtext">
+                                        <div class="container-lg dropdown-position">
+                                            <div class="row">  
+                                                        <div class="col-lg-7 ms-2">
+                                                            <h2 class="dropdown-content-subtext-title">Cumhuriyet Halk
+                                                                Partisi
+                                                            </h2>
+                                                            <p class="dropdown-content-subtext-text">
+                                                                CHP, kurucusu ve ilk Genel Başkanı Atatürk’ün önderliğinde
+                                                                ulusal bağımsızlığı
+                                                                kazanan, Cumhuriyeti kuran, saltanatı kaldıran, hilafete son
+                                                                veren ve Ulusal
+                                                                Birliği sağlayan Partidir. Hukuk ve eğitim gibi toplumsal
+                                                                alanlarda
+                                                                gerçekleştirdiği reformlarla çağdaş Türkiye Cumhuriyeti’ni
+                                                                biçimlendirmiştir.
+                                                            </p>
+                                                            <a href="">
+                                                                <p class="dropdown-content-subtext-link pb-3">DEVAMI</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-4 dropdown-content-images d-flex align-items-center">
+                                                            <div class="d-flex flex-column dropdown-content-images-ataturk">
+                                                                <img class="first"
+                                                                    src="../assets/img/MustafaKemalAtaturk-1.png">
+                                                                <p class="dropdown-content-images-first-title">Kurucumuz</p>
+                                                                <p class="dropdown-content-images-first-name">Mustafa Kemal
+                                                                    Atatürk</p>
+                                                            </div>
+                                                            <div
+                                                                class="d-flex flex-column dropdown-content-images-kilicdaroglu">
+                                                                <img class="second" src="../assets/img/kk.png">
+                                                                <p class="dropdown-content-images-second-title">Genel Başkan
+                                                                </p>
+                                                                <p class="dropdown-content-images-second-name">Kemal
+                                                                    Kılıçdaroğlu</p>
+                                                            </div>
+                                                        </div>
+                                            </div>    
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-content-submenu">
+                                        <div class="container-lg">
+                                            <div class="row">
+                                                <div
+                                                    class="col-lg-2 dropdown-content-submenu-category-left">
+                                                    <ul
+                                                        class="dropdown-content-submenu-unorder  d-flex">
+                                                        <li
+                                                            class="dropdown-content-submenu-unorder-list  mt-3">
+                                                            GENEL BAŞKAN
+                                                            <ul class="dropdown-content-sub active">
+                                                                <li><a href="#">Özgeçmiş</a></li>
+                                                                <li><a href="#">Mal Bildirimi</a></li>
+                                                                <li><a href="#">TBMM Konuşmaları</a>
+                                                                </li>
+                                                                <li><a href="#">Yazılı Açıklamalar</a>
+                                                                </li>
+                                                                <li><a href="#">Kabuller</a></li>
+                                                                <li><a href="#">Miting Konuşmaları</a>
+                                                                </li>
+                                                                <li><a href="#">Etkinlik Konuşmaları</a>
+                                                                </li>
+                                                                <li><a href="#">TV Programları</a></li>
+                                                            </ul>
+                                                            <ul
+                                                                class="dropdown-content-sub-second active">
+                                                                <li><a href="#">Sosyal Medya</a></li>
+                                                                <li><a href="#">Basın Açıklamaları</a>
+                                                                </li>
+                                                                <li><a href="#">Haberler</a></li>
+                                                                <li><a href="#">Cumhuriyet Yazıları</a>
+                                                                </li>
+                                                                <li><a href="#">Adalet Yürüyüşü</a></li>
+                                                                <li><a href="#">Röportajlar</a></li>
+                                                            </ul>
+                                                        </li>
+
+                                                    </ul>
+                                                    <ul class="dropdown-content-submenu-unorder d-flex">
+                                                        <li
+                                                            class="dropdown-content-submenu-unorder-list-party">
+                                                            PARTİ
+                                                            <ul class="dropdown-content-sub "
+                                                                style="top: -40px;">
+                                                                <li><a href="#">Parti Yönetimi</a></li>
+                                                                <li><a href="#">Yerel Yönetimler</a>
+                                                                </li>
+                                                                <li><a href="#">Kadın Kolları</a></li>
+                                                                <li><a href="#">Gençlik Kolları</a></li>
+                                                                <li><a href="#">Yurtdışı Birlikleri</a>
+                                                                </li>
+                                                                <li><a href="#">CHP Tarihi</a></li>
+                                                                <li><a href="#">Parti Tüzüğü</a></li>
+                                                                <li><a href="#">CHP Yönetmelikleri</a>
+                                                                </li>
+                                                            </ul>
+                                                            <ul class="dropdown-content-sub-second "
+                                                                style="top: -40px;">
+                                                                <li><a href="#">Parti Programı</a></li>
+                                                                <li><a href="#">Kurumsal Kimlik</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <ul
+                                                        class="dropdown-content-submenu-unorder volunteer d-flex">
+                                                        <li
+                                                            class=" dropdown-content-submenu-unorder-list-chp-volunteer">
+                                                            CHP GÖNÜLLÜLERİ
+                                                            <ul class="dropdown-content-sub"
+                                                                style="top: -75px;">
+                                                                <p
+                                                                    class="dropdown-content-submenu-unorder-list-chp-volunteer-title">
+                                                                    CHP
+                                                                    Gönüllüleri</p>
+                                                                <p
+                                                                    class="dropdown-content-submenu-unorder-list-chp-volunteer-text">
+                                                                    Lorem ipsum
+                                                                    dolor sit amet, consectetur
+                                                                    adipiscing
+                                                                    elit.
+                                                                    Etiam eu malesuada turpis, id tempor
+                                                                    tortor.
+                                                                    In nulla massa, viverra non ornare
+                                                                    quis,
+                                                                    pretium sed diam. </p>
+                                                                <div
+                                                                    class="d-flex align-items-center mt-4">
+                                                                    <p
+                                                                        class="dropdown-content-submenu-unorder-list-chp-volunteer-link">
+                                                                        Cumhuriyet Halk Partisi
+                                                                        Gönüllüsü
+                                                                        Olun
+                                                                    </p>
+                                                                    <span class="ms-2"><img
+                                                                            src="../assets/svg/news-arrow.svg"></span>
+                                                                </div>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="dropdown-content-submenu-unorder d-flex">
+                                                        <li
+                                                            class="dropdown-content-submenu-unorder-list-chp-membership">
+                                                            ONLİNE ÜYELİK
+                                                            <ul class="dropdown-content-sub"
+                                                                style="top: -110px;">
+                                                                <p
+                                                                    class="dropdown-content-submenu-unorder-list-chp-volunteer-title">
+                                                                    Cumhuriyet
+                                                                    Halk Partisi Üyeliği</p>
+                                                                <p
+                                                                    class="dropdown-content-submenu-unorder-list-chp-volunteer-text">
+                                                                    Lorem
+                                                                    ipsum dolor sit amet, consectetur
+                                                                    adipiscing
+                                                                    elit. Etiam eu malesuada turpis, id
+                                                                    tempor
+                                                                    tortor. In nulla massa, viverra non
+                                                                    ornare
+                                                                    quis, pretium sed diam. </p>
+                                                                <div
+                                                                    class="d-flex align-items-center mt-4">
+                                                                    <p
+                                                                        class="dropdown-content-submenu-unorder-list-chp-volunteer-link">
+                                                                        Cumhuriyet Halk Partisi Üyesi
+                                                                        Olun
+                                                                    </p>
+                                                                    <span class="ms-2"><img
+                                                                            src="../assets/svg/news-arrow.svg"></span>
+                                                                </div>
+                                                                <div
+                                                                    class="d-flex align-items-center mt-4">
+                                                                    <p
+                                                                        class="dropdown-content-submenu-unorder-list-chp-volunteer-link">
+                                                                        Online Üyelik Başvurunuzu
+                                                                        Sorgulayın
+                                                                    </p>
+                                                                    <span class="ms-2"><img
+                                                                            src="../assets/svg/news-arrow.svg"></span>
+                                                                </div>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="dropdown-content-submenu-unorder d-flex">
+                                                        <li
+                                                            class="dropdown-content-submenu-unorder-list-chp-membership">
+                                                            AİDAT
+                                                            <ul class="dropdown-content-sub"
+                                                                style="top: -145px;">
+                                                                <p
+                                                                    class="dropdown-content-submenu-unorder-list-chp-volunteer-title">
+                                                                    Aidat Ödemeleri</p>
+                                                                <p
+                                                                    class="dropdown-content-submenu-unorder-list-chp-volunteer-text">
+                                                                    Lorem
+                                                                    ipsum dolor sit amet, consectetur
+                                                                    adipiscing
+                                                                    elit. Etiam eu malesuada turpis, id
+                                                                    tempor
+                                                                    tortor. In nulla massa, viverra non
+                                                                    ornare
+                                                                    quis, pretium sed diam. </p>
+                                                                <div
+                                                                    class="d-flex align-items-center mt-4">
+                                                                    <p
+                                                                        class="dropdown-content-submenu-unorder-list-chp-volunteer-link">
+                                                                        Aidat Ödeme Formu</p>
+                                                                    <span class="ms-2"><img
+                                                                            src="../assets/svg/news-arrow.svg"></span>
+                                                                </div>
+
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+
+                                            <div id="partyList" class="col-6" style="display: none;">
+                                                <div id="genel-baskan-list" class="d-flex">
+                                                    <ul class="dropdown-content-submenu-unorder-line">
+                                                        <li>Parti Yönetimi</li>
+                                                        <li>Yerel Yönetimler</li>
+                                                        <li>Kadın Kolları</li>
+                                                        <li>Gençlik Kolları</li>
+                                                        <li>Yurtdışı Birlikleri</li>
+                                                        <li>CHP Tarihi</li>
+                                                        <li>Parti Tüzüğü</li>
+                                                        <li>CHP Yönetmelikleri</li>
+                                                    </ul>
+                                                    <ul class="dropdown-content-submenu-unorder-line col-6"
+                                                        style="margin-left:auto">
+                                                        <li>Parti Programı</li>
+                                                        <li>Kurumsal Kimlik</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="dropdown-content-submenu-last-line">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navigation link-button text">GÜNDEM</a>
+                            <div class="dropdown-content">
+                                <div class="dropdown-content-text">
+                                    <div class="dropdown-content-subtext pb-5">
+                                        <div class="container-lg dropdown-position">
+                                                <div class="row">
+                                                    <div class="col-lg-5 ms-2">
+                                                        <h2 class="dropdown-content-subtext-title">Gündem</h2>
+                                                        <p class="dropdown-content-subtext-text">
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                            Etiam eu malesuada turpis, id tempor tortor. In nulla massa,
+                                                            viverra non ornare quis, pretium sed diam.
+                                                        </p>
+                                                        <div class="d-flex align-items-center dropdown-content-news-link">
+                                                            <a href="">
+                                                                <p class=" dropdown-content-news-title">Tüm Haberleri
+                                                                    Görüntüle</p>
+                                                            </a>
+                                                            <span class="ms-2"><img
+                                                                    src="../assets/svg/news-arrow.svg"></span>
+                                                        </div>
+    
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="d-flex flex-column dropdown-content-news-category">
+                                                            <a href="#">Kategori 1</a>
+                                                            <a href="#">Kategori 1</a>
+                                                            <a href="#">Kategori 1</a>
+                                                            <a href="#">Kategori 1</a>
+                                                            <a href="#">Kategori 1</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4 dropdown-content-news-images">
+                                                        <h3 class="dropdown-content-news-images-title ">Öne Çıkan
+                                                            Haberler</h3>
+                                                        <div class="d-flex align-items-center">
+                                                            <div
+                                                                class="d-flex flex-column dropdown-content-news-images-first">
+                                                                <img class="first"
+                                                                    src="../assets/img/chp-tv/genelbaskan-video.png">
+                                                                <p class="dropdown-content-news-images-first-title">22 Eylül
+                                                                    2020</p>
+                                                                <p class="dropdown-content-images-first-name">Özgür Özel
+                                                                    Basın Toplantısı</p>
+                                                            </div>
+                                                            <div
+                                                                class="d-flex flex-column dropdown-content-news-images-second">
+                                                                <img class="second"
+                                                                    src="../assets/img/chp-tv/genelbaskan-video.png">
+                                                                <p class="dropdown-content-news-images-second-title">22
+                                                                    Eylül
+                                                                    2020</p>
+                                                                <p class="dropdown-content-images-second-name">Özgür
+                                                                    Özel Basın Toplantısı</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+    
+    
+                                                </div>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="dropdown-content-submenu-last-line">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navigation link-button text">YAYINLAR</a>
+                            <div class="dropdown-content">
+
+                                <div class="dropdown-content-text">
+                                    <div class="dropdown-content-subtext">
+                                        <div class="container-lg dropdown-position">
+                                            <div class="row">
+                                                <div class="col-lg-5 ms-2">
+                                                    <h2 class="dropdown-content-subtext-title">Yayınlar</h2>
+                                                    <p class="dropdown-content-subtext-text">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                        Etiam
+                                                        eu
+                                                        malesuada turpis, id tempor tortor. In nulla massa, viverra
+                                                        non
+                                                        ornare quis, pretium sed diam.
+                                                    </p>
+                                                    <div class="d-flex align-items-center dropdown-content-news-link">
+                                                        <a href="">
+                                                            <p class="dropdown-content-journal-subtext-link">Tüm
+                                                                Yayınları
+                                                                Görüntüle</p>
+                                                        </a>
+                                                        <span class="ms-2"><img
+                                                                src="../assets/svg/arrow-red.svg"></span>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-lg-5">
+                                                    <div
+                                                        class="d-flex flex-column dropdown-content-journal-category pb-5">
+                                                        <a href="#">Bilim Platformu Yayınları</a>
+                                                        <a href="#">Kültür ve Sanat Raporları</a>
+                                                        <a href="#">Parti Meclisi Raporları</a>
+                                                        <a href="#">MYK Raporları</a>
+                                                        <a href="#">İşveren Sendikaları ve Meslek Birlikleri
+                                                            Raporları</a>
+                                                        <a href="">İnsan Hakları İhlalleri Raporları</a>
+                                                        <a href="">İşsizlik ve Yolsuzluk Bültenleri</a>
+                                                        <a href="">Yerel Yönetimler Yayınları</a>
+                                                        <a href="">Tarım Politikası Yayınları</a>
+                                                        <a href="">Dijital Yayınlar</a>
+                                                        <a href="">Seçim Bİldirgeleri</a>
+                                                        <a href="">Kongre Bİldirgeleri</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 dropdown-content-journal-images">
+                                                    <p class="ms-2 dropdown-content-journal-images-new">YENİ</p>
+                                                    <div class="d-flex align-items-center">
+                                                        <div
+                                                            class="d-flex flex-column dropdown-content-journal-images-photo">
+                                                            <img class="first" src="../assets/img/edebiyat-dergi.png">
+                                                            <p class="dropdown-content-journal-images-photo-title ms-2">
+                                                                Edebiyatçıların ve Yayıncıların Sorunları ve Çözüm
+                                                                Önerileri
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown-content-submenu-last-line">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navigation link-button text">CHP TV</a>
+                            <div class="row">
+                                <div class="dropdown-content">
+                                    <div class="dropdown-content-text">
+                                        <div class="dropdown-content-subtext pb-5">
+                                            <div class="container-lg dropdown-position">
+                                                <div class="row">
+                                                    <div class="col-lg-4 ms-2">
+                                                        <h2 class="dropdown-content-subtext-title">CHP TV</h2>
+                                                        <p class="dropdown-content-subtext-text">
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                            elit. Etiam eu malesuada turpis, id tempor tortor.
+                                                            In nulla massa, viverra non ornare quis, pretium sed
+                                                            diam.
+                                                        </p>
+                                                        <div
+                                                            class="dropdown-content-news-link d-flex align-items-center">
+                                                            <a href="">
+                                                                <p class="dropdown-content-journal-subtext-link">
+                                                                    CHP TV’yi görüntüle</p>
+                                                            </a>
+                                                            <span class="ms-2"><img
+                                                                    src="../assets/svg/arrow-red.svg"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3" style="margin-left: 90px;">
+                                                        <div
+                                                            class="d-flex flex-column dropdown-content-journal-category">
+                                                            <a href="#">Genel Başkan</a>
+                                                            <a href="#">Grup Toplantıları</a>
+                                                            <a href="#">Belgeseller</a>
+                                                            <a href="#">Basın Toplantıları</a>
+                                                            <a href="#">TV Programları</a>
+                                                            <a href="">Mitingler</a>
+                                                            <a href="">Radyo Programları</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 dropdown-content-news-images">
+                                                        <p class="dropdown-content-news-images-title ">En
+                                                            Yeniler</p>
+                                                        <div class=" d-flex align-items-center">
+                                                            <div
+                                                                class="d-flex flex-column dropdown-content-chp-images">
+                                                                <img class="dropdown-content-chp-images-first"
+                                                                    src="../assets/img/chp-tv/genelbaskan-video.png">
+                                                                <span
+                                                                    class="dropdown-content-chp-images-icon-first"><img
+                                                                        class=""
+                                                                        src="../assets/svg/sharp-play.svg"></span>
+                                                                <p class="dropdown-content-news-images-first-title">
+                                                                    22 Eylül 2020</p>
+                                                                <p class="dropdown-content-images-first-name">
+                                                                    Özgür Özel Basın Toplantısı</p>
+                                                            </div>
+                                                            <div
+                                                                class="d-flex flex-column dropdown-content-chp-images ms-3">
+                                                                <img class="dropdown-content-chp-images-second"
+                                                                    src="../assets/img/chp-tv/genelbaskan-video.png">
+                                                                <span
+                                                                    class="dropdown-content-chp-images-icon-second"><img
+                                                                        class=""
+                                                                        src="../assets/svg/sharp-play.svg"></span>
+                                                                <p class="dropdown-content-news-images-first-title">
+                                                                    22 Eylül 2020</p>
+                                                                <p class="dropdown-content-images-second-name">
+                                                                    Özgür Özel Basın Toplantısı</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-content-submenu-last-line">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navigation link-button text">İLETİŞİM</a>
+                            <div class="">
+                                <div class="dropdown-content">
+                                    <div class="dropdown-content-text">
+                                        <div class="dropdown-content-subtext">
+                                            <div class="container-lg">
+                                                <div class="row">
+                                                        <div class="col-lg-2 ms-2">
+                                                            <h2 class="dropdown-content-subtext-title">İletişim</h2>
+                                                            <div class="">
+                                                                <div
+                                                                    class="d-flex flex-column dropdown-content-journal-category">
+                                                                    <a href="#">Genel Merkez</a>
+                                                                    <a href="#">İl İlçe Başkanlıkları</a>
+                                                                    <a href="#">Yurtdışı Birlikleri</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-9">
+                                                            {% include "components/Contact-map.html" %}
+                                                            <p class="map-text pb-3">*İl başkanlıkları Sitelerini
+                                                                görüntülemek için haritadan şehir seçimi yapabilirsiniz.
+                                                            </p>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-content-submenu-last-line">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <a class="navigation link-button icon">
+                    <img src="../assets/svg/search-icon.svg" alt="searchIcon">
+                </a>
+                <a class="navigation link-button icon">
+                    <img src="../assets/svg/twitter-icon.svg" alt="twitterIcon">
+                </a>
+                <a class="navigation link-button icon">
+                    <img src="../assets/svg/facebook-icon.svg" alt="facebookIcon">
+                </a>
+                <a class="navigation link-button icon">
+                    <img src="../assets/svg/instagram-icon.svg" alt="instagramIcon">
+                </a>
+                <a class="navigation link-button icon">
+                    <img src="../assets/svg/youtube-icon.svg" alt="youtubeIcon">
+                </a>
+            </nav>
+        </div>
+    </div>
+    <div class="navigation-mobil">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col">
+                    <img class="navigation-mobil-image" src="../assets/img/chp-yatay-logo-2.png">
+                </div>
+
+                <div class=" navigation-mobil-right col-md-4 col d-flex align-items-center justify-content-center">
+                    <a class="navigation link-button icon">
+                        <img src="../assets/svg/search-icon.svg">
+                    </a>
+
+                    <div onclick="showMenu()" id="mobilMenu" class="navigation-mobil-menu ">
+                        <img src="../assets/svg/mobile-menu-icon.svg">
+                        <p class="navigation-mobil-menu-text">MENU</p>
+                    </div>
+                    <div id="mobilCloseMenu" onclick="closeMenu()" style="display: none;"
+                        class="navigation-mobil-image-close">
+                        <img src="../assets/svg/close-24px.svg">
+                        <p>KAPAT</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="mobilMenuContent" class="navigation-mobil-menu-content" style="z-index: 10; display: none;">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="searchMenu" class="navigation-mobil-menu-content-search">
+                        <span class="navigation-mobil-menu-content-icon"><img src="../assets/svg/search-icon.svg"></span>
+                        <input type="text" placeholder="Arama Yapın">
+                    </div>
+                    <ul>
+                        <li id="chpMenu" onclick="openChpMenu()"><a href="">CHP</a>
+                            <span><img src="../assets/svg/expand_more-24px.svg"></span>
+                        </li>
+                        <ul id="chpSubmenu" style="display: none;">
+                            <div id="backIconChpSubMenu" onclick="backtoChpSubMenu()"
+                                class="navigation-mobil-menu-back-icon" style="display: none;">
+                                <span><img src="../assets/svg/back-24px.svg"></span>
+                                <a href="#">GERİ</a>
+                            </div>
+                            <div id="backIconChpList" onclick="backtoChpList()" class="navigation-mobil-menu-back-icon"
+                                style="display: none;">
+                                <span><img src="../assets/svg/back-24px.svg"></span>
+                                <a href="#">GERİ</a>
+                            </div>
+                            <li id="GenelBaskanList" onclick="openGenelBaskanSubMenu()">
+                                <a href="#">GENEL BAŞKAN</a>
+                                <span><img src="../assets/svg/expand_more-24px.svg"></span>
+                            </li>
+    
+                            <ul id="genelBaskanSubMenu" style="display: none;">
+                                <li><a href="#">Özgeçmiş</a></li>
+                                <li><a href="#">Mal Bildirimi</a></li>
+                                <li><a href="#">TBMM Konuşmaları</a></li>
+                                <li><a href="#">Yazılı Açıklamalar</a></li>
+                                <li><a href="#">Kabuller</a></li>
+                                <li><a href="#">Miting Konuşmaları</a></li>
+                                <li><a href="#">Etkinlik Konuşmaları</a></li>
+                                <li><a href="#">Sosyal Medya</a></li>
+                                <li><a href="#">Basın Açıklamaları</a></li>
+                                <li><a href="#">Haberler</a></li>
+                                <li><a href="#">Cumhuriyet Yazıları</a></li>
+                                <li><a href="#">Adalet Yürüyüşü</a></li>
+                                <li><a href="#">Röportajlar</a></li>
+                            </ul>
+                            <div id="backIconChpList" onclick="backtoChpList()" class="navigation-mobil-menu-back-icon"
+                                style="display: none;">
+                                <span><img src="../assets/svg/back-24px.svg"></span>
+                                <a href="#">GERİ</a>
+                            </div>
+                            <li id="partiList" onclick="openPartiSubMenu()">
+                                <a href="#">PARTİ</a>
+                                <span><img src="../assets/svg/expand_more-24px.svg"></span>
+                            </li>
+    
+                            <ul id="PartiSubMenu" style="display: none;">
+                                <li><a href="#">Parti Yönetimi</a></li>
+                                <li><a href="#">Yerel Yönetimler</a></li>
+                                <li><a href="#">Kadın Kolları</a></li>
+                                <li><a href="#">Gençlik Kolları</a></li>
+                                <li><a href="#">Yurtdışı Birlikleri</a></li>
+                                <li><a href="#">CHP Tarihi</a></li>
+                                <li><a href="#">Parti Tüzüğü</a></li>
+                                <li><a href="#">CHP Yönetmelikleri</a></li>
+                                <li><a href="#">Parti Programı</a></li>
+                                <li><a href="#">Kurumsal Kimlik</a></li>
+                            </ul>
+                            <div id="backIconChpList" onclick="backtoChpList()" class="navigation-mobil-menu-back-icon"
+                                style="display: none;">
+                                <span><img src="../assets/svg/back-24px.svg"></span>
+                                <a href="#">GERİ</a>
+                            </div>
+                            <li id="GonulluList" onclick="openGonulluSubMenu()">
+                                <a href="#">CHP GÖNÜLLÜLERİ</a>
+                                <span><img src="../assets/svg/expand_more-24px.svg"></span>
+                            </li>
+                            <ul id="GonulluSubMenu" style="display: none;">
+                                <li><a href="#">Cumhuriyet Halk Partisi Gönüllüsü Olun</a></li>
+                            </ul>
+                            <div id="backIconChpList" onclick="backtoChpList()" class="navigation-mobil-menu-back-icon"
+                                style="display: none;">
+                                <span><img src="../assets/svg/back-24px.svg"></span>
+                                <a href="#">GERİ</a>
+                            </div>
+                            <li id="uyelikList" onclick="openUyelikSubMenu()">
+                                <a href="#">ONLİNE ÜYELİK</a>
+                                <span><img src="../assets/svg/expand_more-24px.svg"></span>
+                            </li>
+                            <ul id="UyelikSubMenu" style="display: none;">
+                                <li><a href="#">Cumhuriyet Halk Partisi Üyesi Olun</a></li>
+                                <li><a href="#">Online Üyelik Başvurunuzu Sorgulayın</a></li>
+                            </ul>
+                            <div id="backIconChpList" onclick="backtoChpList()" class="navigation-mobil-menu-back-icon"
+                                style="display: none;">
+                                <span><img src="../assets/svg/back-24px.svg"></span>
+                                <a href="#">GERİ</a>
+                            </div>
+                            <li id="aidatList" onclick="openAidatSubMenu()">
+                                <a href="#">AİDAT</a>
+                                <span><img src="../assets/svg/expand_more-24px.svg"></span>
+                            </li>
+                            <ul id="AidatSubMenu" style="display: none;">
+                                <li><a href="#">Aidat Ödeme Formu</a></li>
+                            </ul>
+                            <div id="backIconChpList" onclick="backtoChpList()" class="navigation-mobil-menu-back-icon"
+                                style="display: none;">
+                                <span><img src="../assets/svg/back-24px.svg"></span>
+                                <a href="#">GERİ</a>
+                            </div>
+                            <li id="chpTvList" onclick="openChpTvSubMenu()">
+                                <a href="#">CHP TV</a>
+                                <span><img src="../assets/svg/expand_more-24px.svg"></span>
+                            </li>
+                            <ul id="ChpTvSubMenu" style="display: none;">
+                                <li><a href="#">Genel Başkan</a></li>
+                                <li><a href="#">Grup Toplantıları </a></li>
+                                <li><a href="#">Belgeseller </a></li>
+                                <li><a href="#">Basın Toplantıları </a></li>
+                                <li><a href="#">TV Programları </a></li>
+                                <li><a href="#">Mitingler </a></li>
+                                <li><a href="#">Radyo Programları </a></li>
+                            </ul>
+                        </ul>
+    
+                        <li id="gundemMenu" onclick="openGundemSubMenu()"><a href="">GÜNDEM</a>
+                            <span><img src="../assets/svg/expand_more-24px.svg"></span>
+                        </li>
+                        <ul id="gundemSubMenu" style="display: none;">
+                            <div id="backIconChpSubMenu" onclick="backtoChpSubMenu()"
+                                class="navigation-mobil-menu-back-icon">
+                                <span><img src="./assets/svg/back-24px.svg"></span>
+                                <a href="#">GERİ</a>
+                            </div>
+                            <li>
+                                <a href="#">Tüm Haberleri Görüntüle</a>
+                            </li>
+                            <li>
+                                <a href="#">Kategori 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Kategori 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Kategori 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Kategori 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Kategori 1</a>
+                            </li>
+                        </ul>
+                        <li id="yayinlarMenu" onclick="openYayinlarSubMenu()"><a href="">YAYINLAR</a>
+                            <span><img src="../assets/svg/expand_more-24px.svg"></span>
+                        </li>
+                        <ul id="yayinlarSubMenu" style="display: none;">
+                            <div id="backIconChpSubMenu" onclick="backtoChpSubMenu()"
+                                class="navigation-mobil-menu-back-icon">
+                                <span><img src="./assets/svg/back-24px.svg"></span>
+                                <a href="#">GERİ</a>
+                            </div>
+                            <li>
+                                <a href="#">Bilim Platformu Yayınları</a>
+                            </li>
+                            <li>
+                                <a href="#">Kültür ve Sanat Raporları</a>
+                            </li>
+                            <li>
+                                <a href="#">Parti Meclisi Raporları</a>
+                            </li>
+                            <li>
+                                <a href="#">MYK Raporları</a>
+                            </li>
+                            <li>
+                                <a href="#">İşveren Sendikaları ve Meslek Birlikleri Raporları</a>
+                            </li>
+                            <li>
+                                <a href="#">İnsan Hakları İhlalleri Raporları</a>
+                            </li>
+                            <li>
+                                <a href="#">İşsizlik ve Yolsuzluk Bültenleri</a>
+                            </li>
+                            <li>
+                                <a href="#">Yerel Yönetimler Yayınları</a>
+                            </li>
+                            <li>
+                                <a href="#">Tarım Politikası Yayınları</a>
+                            </li>
+                            <li>
+                                <a href="#">Dijital Yayınlar</a>
+                            </li>
+                            <li>
+                                <a href="#">Seçim Bİldirgeleri</a>
+                            </li>
+                            <li>
+                                <a href="#">Kongre Bİldirgeleri</a>
+                            </li>
+                        </ul>
+    
+                        <li id="chpTvMenu" onclick="openChpTvListSubMenu()"><a href="">CHP TV</a>
+                            <span><img src="../assets/svg/expand_more-24px.svg"></span>
+                        </li>
+                        <ul id="chpTvListSubMenu" style="display: none;">
+                            <div id="backIconChpSubMenu" onclick="backtoChpSubMenu()"
+                                class="navigation-mobil-menu-back-icon">
+                                <span><img src="../assets/svg/back-24px.svg"></span>
+                                <a href="#">GERİ</a>
+                            </div>
+                            <li>
+                                <a href="#">Genel Başkan</a>
+                            </li>
+                            <li>
+                                <a href="#">Grup Toplantıları</a>
+                            </li>
+                            <li>
+                                <a href="#">Belgeseller</a>
+                            </li>
+                            <li>
+                                <a href="#">Basın Toplantıları</a>
+                            </li>
+                            <li>
+                                <a href="#">TV Programları</a>
+                            </li>
+                            <li>
+                                <a href="#">Mitingler</a>
+                            </li>
+                            <li>
+                                <a href="#">Radyo Programları</a>
+                            </li>
+                        </ul>
+                        <li id="iletisimMenu" onclick="openIletisimSubMenu()"><a href="">İLETİŞİM</a>
+                            <span><img src="../assets/svg/expand_more-24px.svg"></span>
+                        </li>
+                        <ul id="IletisimSubMenu" style="display: none;">
+                            <div id="backIconChpSubMenu" onclick="backtoChpSubMenu()"
+                                class="navigation-mobil-menu-back-icon">
+                                <span><img src="../assets/svg/back-24px.svg"></span>
+                                <a href="#">GERİ</a>
+                            </div>
+                            <li><a href="#">Genel Merkez</a></li>
+                            <li><a href="#">İl İlçe Başkanlıkları </a></li>
+                            <li><a href="#">Yurtdışı Birlikleri </a></li>
+                        </ul>
+    
+                    </ul>
+                    <div id="socialMediaIcons" class="col-md-5 mx-auto navigation-mobil-menu-content-icons-box">
+                        <span>
+                            <a href="#"><img src="../assets/svg/Twitter.svg"></a>
+                        </span>
+                        <span>
+                            <a href="#"><img src="../assets/svg/Facebook.svg"></a>
+                        </span>
+                        <span>
+                            <a href="#"><img src="../assets/svg/instagram.svg"></a>
+                        </span>
+                        <span>
+                            <a href="#"><img src="../assets/svg/Youtube.svg"></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header>
+{% endblock %}

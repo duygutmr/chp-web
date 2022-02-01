@@ -1,0 +1,212 @@
+.historyContainer {
+    .row {
+        margin-right: 0px;
+    }
+}
+@media screen and (max-width:415px) {
+    .historyContainer{
+        .row{
+            margin-right: 0px;
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    .historyContainer{
+        .row{
+            margin-right: 0px;
+        }
+    }
+}
+
+
+.history-titles {
+
+    h2 {
+        border-left: 2px solid red;
+        padding: 10px;
+
+    }
+}
+
+.share-button-mobile{
+    display: none;
+}
+
+@media screen and (max-width:415px) {
+    .share-button-mobile{
+        display: block;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .share-button-desktop{
+        display: none;
+    }
+}
+
+@media screen and (max-width:415px) {
+    .history-titles {
+        h2 {
+            border-left: 2px solid red;
+            padding: 10px;
+            margin-left: 0px;
+        }
+    }
+}
+
+
+
+.history-titles {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-left: 1px solid $gray;
+    border-right: 1px solid $gray;
+    padding-top: 100px;
+}
+
+@media screen and (max-width:415px) {
+    .history-titles {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-transform: uppercase;
+        padding: 90px 16px 0 24px;
+        padding-bottom: 20px;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .history-titles-show {
+        margin-right: 20px;
+    }
+}
+
+.border {
+    height: 1px;
+    background-color: #dcdcdc;
+}
+
+
+
+.historyContainer {
+    background-color: #f8f8f8;
+}
+
+@media screen and (max-width:415px) {
+    .historyContainer {
+        padding: 0 0 121px;
+        background-color: #f8f8f8;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .historyContainer {
+        padding: 0 0 44px;
+        background-color: #f8f8f8;
+    }
+}
+
+.history-content {
+    border-right: 1px solid #dcdcdc;
+}
+
+@media screen and (max-width:415px) {
+    .history-content {
+        margin: 10px 0px;
+        border-right:0px;
+    }
+}
+@media screen and (max-width:768px) {
+    .history-content {
+        margin: 10px 10px;
+        border-right:0px;
+    }
+}
+
+.history-content-article {
+    margin-left: 15px;
+    margin-bottom: 60px;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.8);
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+@media screen and (max-width:415px) {
+    .history-content-article {
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.75;
+        letter-spacing: normal;
+        text-align: left;
+        color: rgba(0, 0, 0, 0.8);
+        margin-right:0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .history-content-article {
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.75;
+        letter-spacing: normal;
+        text-align: left;
+        color: rgba(0, 0, 0, 0.8);
+        margin-right:0px;
+    }
+}
+
+.history-content-head {
+    font-family: Gotham-Bold;
+    font-size: 24px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+    margin-top: 30px;
+}
+
+@media screen and (max-width:415px) {
+    .history-content-head {
+        font-size: 24px;
+        font-weight: 900;
+        font-stretch: normal;
+        font-style: italic;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: left;
+        color: #000000;
+    }
+}
+
+.history-content-image {
+    object-fit: contain;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.history-content-imagetext {
+    font-size: 13px;
+    font-family: Gotham-Bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+}

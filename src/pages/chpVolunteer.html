@@ -1,0 +1,13 @@
+{% extends "Base.html" %}
+
+{% block title %}
+CHP Gönüllüleri
+{% endblock %}
+
+
+{% block page_content %}
+{% include "components/Volunteer-Breadcrumb.html" %}
+   {% include "components/Chp-Volunteer-Title.html" %}
+   {% include "components/Chp-Volunteer.html" %}
+   {% include "components/Newsletter-Subscription.html" %}
+{% endblock %}

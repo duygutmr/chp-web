@@ -1,0 +1,47 @@
+.chp-suggestion {
+    &-category {
+        font-weight: bold;
+        line-height: 2.08;
+        color: $secondary;
+        &-text {
+            font-size: 16px;
+            line-height: 1.88;
+            //color: $gray;
+            color: #414042;
+            opacity: 0.5;
+        }
+    }
+    &-link {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            p {
+                font-size: 12px;
+                font-family: Gotham-Bold;
+                line-height: 1.33;
+                color: $primary;
+                margin: 0;
+            }
+
+        &:hover {
+            color: $primary;
+        }
+    }
+    &-content {
+        margin-top: 33px;
+    }
+}
+.chp-articles-box:hover .chp-suggestion-content {
+    margin-left: 30px;
+    transition-duration: .2s;
+}
+@media screen and (max-width: 415px) {
+    .chp-suggestion {
+       &-content {
+         img {
+             display: none;
+         }
+      }
+    }
+
+}

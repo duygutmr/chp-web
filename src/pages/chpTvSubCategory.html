@@ -1,0 +1,19 @@
+{% extends "Base.html" %}
+
+{% block title %}
+CHP TV Alt Kategori
+{% endblock %}
+
+
+{% block page_content %}
+{% include "components/Chp-Tv-Title.html" %}
+{% include "components/sorting.html" %}
+   {% include "components/Chp-Tv-Sub-Category.html" %}
+   {% include "components/Chp-Tv-Sub-Category.html" %}
+   {% include "components/Chp-Tv-Sub-Category.html" %}
+   {% include "components/Chp-Tv-Sub-Category.html" %}
+   <div class="chp-tv-page-num">
+    {% include "components/Journal-pagination.html" %}
+</div>
+   {% include "components/Newsletter-Subscription.html" %}
+{% endblock %}

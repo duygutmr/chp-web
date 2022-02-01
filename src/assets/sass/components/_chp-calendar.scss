@@ -1,0 +1,166 @@
+.chp-calendar {
+    border-bottom: 1px solid $gray;
+    overflow: hidden;
+    position: relative;
+    &-title {
+        font-weight: bold;
+        line-height: 1.33;
+        color: $primary;   
+    }
+    &-box {
+        height: 109px;
+        background-color: $primary;
+        border-right: 1px solid $gray;
+        padding-top: 9px;
+        &-vertical {
+            position: absolute;
+            top: 0;
+            height: 109px;
+            opacity: 0.3;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 1%, #000000 99%);
+            width: 10px;
+            &-month {
+                font-size: 12px;
+                font-family: Gotham-Medium;
+                color: $gray; 
+            }
+            &-date {
+                font-size: 36px;
+                font-family: Gotham-Bold;
+                line-height: 1.33;
+                color: #fff;
+            }
+            &-day {
+                font-size: 12px;
+                font-family: Gotham-Medium;
+                color: #fff;
+            }
+        }
+        &-horizontal {
+            height: 8px;
+            opacity: 0.3;
+            background-color: #05314a;
+            position: relative;
+            top: 1px;
+        }
+        &-first,
+        &-last {
+            width: 100%;
+        }
+
+    }
+    .no-border {
+        border: none;
+    }
+    .arrows {
+        width: 59px;
+        &-box {
+            justify-content: center;
+            align-items: center;
+            height: 54px;
+            cursor: pointer;
+        }
+    }
+    .owl-nav {
+       display: none;     
+    }
+    &-nav {
+        background-color: $primary;
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: -30px;
+        height: 109px;
+    }
+    &-slider-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 59px;
+        height: 54px;
+        background-color: transparent;
+        border: none;
+    }
+    &-position {
+        position: relative;
+    }
+}
+
+.color-box {
+    background-color: #dcdcdd70 ;
+}
+.color-day,
+.color-date {
+    color: $secondary;
+}
+.color-horizontal {
+    background-color: $gray;
+    border-bottom: 1px solid $secondary;
+}
+.chp-program {
+    &-box {
+        align-items: center;
+        border-bottom: 1px solid $gray;
+    }
+    &-hour {
+        h4 {
+            font-size: 16px;
+            font-weight: 900;
+            line-height: 1.38;
+            letter-spacing: 3.2px;
+            color: $primary;
+            padding: 40px 0;
+        }
+    }
+    &-content {
+        padding: 35px 100px 35px 45px ;
+        p {
+            font-size: 16px;
+            line-height: 1.88;
+            color: $primary;
+            font-family: Gotham-Light;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .chp-calendar-box {
+        &.mobile-medium {
+            display: none;
+        }
+    }
+    .chp-program {
+        &-content {
+            padding-right: 0;
+        }
+    }
+}
+@media screen and (max-width: 415px) {
+    .chp-calendar-box {
+        &.mobile {
+            display: none;
+        }
+        &-vertical {
+            display: none;
+        }
+    }
+    .chp-program {
+        &-line {
+            flex-direction: column;
+        }
+        &-content {
+            padding: 10px 32px 36px 32px;
+        }
+        &-hour {
+            h4 {
+                padding: 36px 2px 0 32px;
+            }
+        }
+    }
+    .chp-calendar {
+        &-nav {
+            right: 0;
+        }
+    }
+
+
+}

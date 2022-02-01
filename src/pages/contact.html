@@ -1,0 +1,19 @@
+{% extends "Base.html" %}
+
+{% block title %}
+CHP Contact
+{% endblock %}
+
+
+{% block page_content %}
+   {% include "components/Contact-page.html" %}
+   <div class="genel-baskan-form-title">
+      <div class="container">
+          <div class="col-lg-6 mx-auto text-center">
+              <h1>Bize Yazın</h1>
+          </div>
+      </div>
+  </div>
+   {% include "components/form.html" %}
+   {% include "components/Newsletter-Subscription.html" %}
+{% endblock %}

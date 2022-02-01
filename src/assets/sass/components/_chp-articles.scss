@@ -1,0 +1,114 @@
+.chp-articles {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    &-title {
+        color: $primary;
+        font-size: 48px;
+        line-height: 1.67;
+        margin-bottom: 30px;
+        border-left: 2px solid $secondary;
+        padding-left: 20px;
+    }
+    &-box {
+        text-decoration: none;
+        padding: 0 34px 0 30px;
+        &-text {
+            font-size: 16px;
+            font-family: Gotham-Bold;
+            line-height: 1.38;
+            margin-top: 5px;
+            color: #000;
+        }
+
+        &-category {
+            margin-top: 16px;
+        }
+
+        &-link {
+            &-title {
+                display: flex;
+                align-items: center;
+                p {
+                    font-family: Gotham-Bold;
+                    font-size: 12px;
+                    line-height: 1.33;
+                    margin: 0;
+                    color: $secondary;
+                }
+            }
+        }
+        &-img {
+            img {
+                width: 100%;
+            }
+        }
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &-content {
+        height: 89px;
+    }
+}
+.chp-articles-box:hover .chp-articles-box-link {
+    margin-left: 30px;
+    transition-duration: .2s;
+}
+@media screen and (max-width: 1024px) {
+    .chp-articles {
+        &-content {
+            margin-bottom: 57px;
+        }
+    }
+}
+@media screen and (max-width: 415px) {
+    .chp-articles {
+        margin-top: 132px;
+        margin-bottom: 100px;
+        &-title {
+            font-size: 24px ;
+            margin-bottom: 0;
+        }
+        &-box {
+            &-human {
+                margin-top: 40px;
+            }
+            &-human,
+            &-economi,
+            &-education,
+            &-turkey {
+                &-img {
+                    width: 90%;
+                }
+            }
+            &-link {
+                margin-top: 60px;
+            }
+            &-category {
+                margin-top: 43px;
+            }
+        }
+        &-content {
+            height: auto;
+            margin-bottom: 40px;
+        }
+    }
+
+}
+@media screen and (max-width: 376px) {
+    .chp-articles {
+        &-box {
+            &-human,
+            &-economi,
+            &-education,
+            &-turkey {
+                &-img {
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+
+
+}

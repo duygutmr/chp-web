@@ -1,0 +1,15 @@
+{% extends "Base.html" %}
+
+{% block title %}
+CHP Yayinlar
+{% endblock %}
+
+
+{% block page_content %}
+{% include "components/Publications-live-read.html" %}
+<div class="container newsOneLine">
+    <h4 class="newsOneLine-title">Gündem’den Öne Çıkan Haberler</h4>
+    {% include "components/NewsOneLine.html" %}
+</div>
+{% include "components/Newsletter-Subscription.html" %}
+{% endblock %}

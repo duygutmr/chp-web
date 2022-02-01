@@ -1,0 +1,97 @@
+.sub-management-news-section{
+   margin-top: 75px;
+   & .sub-management-news-main{
+      justify-content: space-between;
+      align-items: center;
+      &-title h2{
+        font-family: Gotham-Bold;
+         line-height: 1.67;
+         color: $primary;
+      }
+   }
+   & .sub-management-news{
+      margin-top: 25px;
+      &-card{
+          
+         &-content{
+            text-decoration: none;
+            & img{
+               width: 100%;
+            }
+            &-date{
+               padding: 10px 0 0 20px;
+            }
+            & h2{
+               color: black;
+               line-height: 1.33;
+               font-family: Gotham-Bold;
+               margin-top: 10px;
+               font-size: 36px;
+               &:hover{
+                  color:$primary;
+               }
+            }
+            &-show{
+               position: relative;
+               & h6{
+                  line-height: 1.33;
+                  font-family: Gotham-Bold;
+                  margin-top: 40px;
+                  color: $secondary;
+                  font-size: 12px;
+                  &:hover + .subsite-news-arrow{
+                     display: block;
+                  }
+                  &:hover{
+                     cursor: pointer;
+                  }
+               }
+               & .subsite-news-arrow{
+                  background: url(../svg/subsite-news-arrow.svg) top center no-repeat;
+                  display: none;
+                  position: absolute;
+                  top:0px;
+                  left:100px;
+                  width: 16px;
+                  height: 16px;
+               }
+            }
+         }
+      }
+   }
+}
+.sub-management-news-card-content:hover .effect {
+   color: $secondary;
+}
+.sub-management-news-card-content:hover h2 {
+   color: $primary;
+}
+
+@media screen and (max-width: 768px) {
+   .sub-management-news-section{
+      & .sub-management-news{
+         &-card{
+            &-content{
+               margin-top: 20px;
+               &-show{
+                  display: none;
+               }
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 415px) {
+   .sub-management-news-section{
+      & .sub-management-news{
+         &-card{
+            &-content{
+               & h2{
+                  font-size: 16px;
+               }
+            }
+         }
+      }
+   }
+}

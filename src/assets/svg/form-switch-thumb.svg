@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="43" height="31" viewBox="0 0 31 31">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fcfcfc"/>
+    </radialGradient>
+    <filter id="Path_5239" x="0" y="0" width="31" height="31" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feFlood flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_5239)">
+    <g id="Path_5239-2" data-name="Path 5239" transform="translate(4.5 3.5)" fill="url(#radial-gradient)">
+      <path d="M 11 21.5 C 5.210279941558838 21.5 0.5 16.78972053527832 0.5 11 C 0.5 5.210279941558838 5.210279941558838 0.5 11 0.5 C 16.78972053527832 0.5 21.5 5.210279941558838 21.5 11 C 21.5 16.78972053527832 16.78972053527832 21.5 11 21.5 Z" stroke="none"/>
+      <path d="M 11 1 C 5.485979080200195 1 1 5.485979080200195 1 11 C 1 16.51401901245117 5.485979080200195 21 11 21 C 16.51401901245117 21 21 16.51401901245117 21 11 C 21 5.485979080200195 16.51401901245117 1 11 1 M 11 0 C 17.07513046264648 0 22 4.924869537353516 22 11 C 22 17.07513046264648 17.07513046264648 22 11 22 C 4.924869537353516 22 0 17.07513046264648 0 11 C 0 4.924869537353516 4.924869537353516 0 11 0 Z" stroke="none" fill="#f8f8f8"/>
+    </g>
+  </g>
+</svg>

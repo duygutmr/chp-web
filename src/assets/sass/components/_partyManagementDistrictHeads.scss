@@ -1,0 +1,427 @@
+.party-management-district-section-title{
+    padding-top: 80px;
+    border-left: 1px solid $gray;
+    border-right: 1px solid $gray;
+}
+
+.party-management-district-section-main{
+    a {
+        text-decoration: none;
+    }
+    border-top: 1px solid $gray;
+    margin-bottom: 100px;
+   & .party-management-district-section{
+      background-color: #f3f3f3;
+      border-bottom: 1px solid $gray;
+      & .party-management-district-top{    
+        background-color: #f3f3f3;
+        border-right: 1px solid $gray;
+        &-mobile{
+            display: none;
+        }
+      }
+      & .party-management-district-bottom{                   
+        background-color: #f8f8f8;
+        border-right: 1px solid $gray;
+        padding-left: 8px;
+      }
+      &-aside{ 
+         & ul{
+            list-style-type: none;
+            padding-top: 45px;
+            & li{
+               font-family: Gotham-Bold;
+               font-size: 13px;
+               line-height: 1.46;
+               letter-spacing: 0.26px;
+               border-bottom: 1px solid $gray;
+               padding: 16px 0;
+               color: $black;
+               cursor: pointer;
+               &:first-child{
+                  border-top: none;
+               }
+               &:last-child{
+                  border-bottom: 1px solid $gray;
+               }
+               &:hover{
+                  color: $primary;
+               }
+               & a{
+                  text-decoration: none;
+                  color: #000;
+   
+               }
+            }
+         }
+         &-select{
+            &-arrow{
+                display: none;               
+            }
+            & select{
+               display: none;               
+               font-family: Gotham-Bold;
+               line-height: 1.46;
+               letter-spacing: 0.26px;
+               border: none;
+               outline: none;
+               width: 100%;
+               border: 1px solid $gray;
+               border-top: none;
+               padding: 20px;
+               background-color: #f3f3f3;
+            }
+         }
+      }
+      &-members{
+         padding-top:20px;
+         padding-right: 8px;
+         &-title{
+            & h2{
+               color: #000;
+            }
+         }
+         & .party-management-district-section-center{
+            align-items: flex-start;
+         }
+         &-input{
+            display: flex;
+            margin-right: 20px;
+            position: relative;
+            &-filter{
+               position: relative;
+               & input{
+                  width: 300px;
+                  height: 46px;
+                  &::placeholder{
+                    font-family: Gotham-Bold;
+                  }
+               }
+               & .filter-icon{
+                  position: absolute;
+                  top: 13px;
+                  right: 10px;
+                  width: 28px;
+                  height: 23px;
+                  &:hover{
+                     cursor: pointer;
+                  }
+               }
+            }
+            & .subsite-selectbox-arrow {
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+            }
+            & .select-control {
+                height: 46px;
+                border: solid 1px $gray;
+                padding: 0 12px;
+                margin-left: 20px;
+                width: 150px;
+                color: $gray;
+                background-color: white;
+                line-height: 1.43;
+                font-family: Gotham-Bold;
+                font-size: 14px;
+                &:focus,
+                &:active {
+                    outline: 0;
+                }   
+            }
+            select {
+                -moz-appearance:none; /* Firefox */
+                -webkit-appearance:none; /* Safari and Chrome */
+                appearance:none;
+              }
+         }
+         &-card{
+            width: 100%;
+            &:hover{
+                h6, p{
+                    color: $secondary;
+                }
+            }
+            & img{
+               padding:10px;
+            }
+            &-content{
+               margin-left: 20px;
+               display: flex;
+               flex-direction: column;
+               justify-content: space-around;
+               align-items: flex-start;
+               &-top h4{
+                  color: $primary;
+               }
+               &-bottom{
+                  & h6{
+                     line-height: 1.46;
+                     letter-spacing: 0.26px;
+                     color: #414042;
+                     font-size: 13px;
+                  }
+                  & p{
+                     line-height: 1.46;
+                     font-size: 13px;
+                     color: #414042;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+.district-heads-card{
+    margin-top: 29px;
+    margin-bottom: 50px;
+}
+.nopadding{
+    padding: 0 !important;
+    border-bottom: 1px solid $gray;
+    &:first-child, &:nth-child(2){
+       border-top: 1px solid $gray;
+    }
+    &:nth-child(odd){
+       border-right: 1px solid $gray;
+    }
+}
+.party-management-district-section-center{
+   justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+   .party-management-district-section-main{
+      & .party-management-district-section{
+         & .party-management-district-bottom{ 
+             background-color: #f3f3f3;
+             border-right: none;
+             padding-left: 0;
+        }
+        & .party-management-district-top{    
+            border-right: none;
+            &-mobile{
+                display: block;
+                position: relative;
+                ul {
+                    margin: 0;
+                    padding-left: 0;
+                    list-style: none;    
+                    border: 1px solid $gray;       
+                    border-top: none;         
+                    li {
+                        p {
+                          color: #000;
+                          font-family: Gotham-Bold;
+                          font-size: 24px;
+                          padding: 15px 26px;
+                      }
+                    }
+                }
+                & .party-management-mobile-dropdown{
+                    display: none;
+                    li {
+                        padding: 15px 26px;
+                        border-bottom: 1px solid $gray;
+                        a {
+                            text-decoration: none;
+                            color: $primary;
+                            font-family: Gotham-Light;
+                        }
+                        &:first-child {
+                            border-top: 1px solid $gray;
+                        }
+                        &:last-child{
+                            border-bottom: none;
+                        }
+                    }
+                    li:hover {
+                        background-color: $gray;
+                        a {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                & .party-management-mobile-arrow-red{
+                    display: none;
+                    position: absolute;
+                    right: 20px;
+                    top: 20px;
+                }
+                & .party-management-mobile-arrow-down{
+                    display: block;
+                    position: absolute;
+                    right: 20px;
+                    top: 20px;
+                }
+
+                 & ul li:hover .party-management-mobile-dropdown{
+                     display: block;
+                     border: none;
+                 }
+                 & ul li:hover .party-management-mobile-arrow-red{
+                    display: block;
+                }
+                & ul li:hover .party-management-mobile-arrow-down{
+                    display: none;
+                }
+                & ul:hover{
+                    background: #fff;
+                }
+                & ul li:hover p{
+                    color: $secondary;
+                }
+             }
+          }
+         &-aside{ 
+            & ul{
+               display: none;
+            }
+            &-select{
+                position: relative;
+                border-top: none;
+                &-arrow{
+                    display: block; 
+                    position: absolute;
+                    right: 10px;
+                    bottom: 20px;              
+                }
+               & select{
+                  display: block;             
+               }
+            }
+         }
+         &-members{
+            padding:20px;
+            &-title{
+               display: none;
+            }
+            &-input{
+               width: 100%;
+               padding-left: 20px;
+               padding-right: 20px;
+               &-filter{
+                  & input{
+                     &::placeholder{
+                        padding-left: 0px;
+                     }
+                  }
+               }
+               & .subsite-selectbox-arrow {
+                right: 30px;
+                }
+                & .select-control {
+                    padding: 0 5px;
+                    width: 100%; 
+                }
+               & select{
+                  width: 100%;
+               }
+            }
+            &-card{
+                margin-top: 0;
+                border-top: none;
+                padding:20px;
+                border-left: 1px solid $gray;
+               &-content{
+                  margin-left: 15px;
+                  margin-top: 10px;
+                  justify-content: flex-start;
+               }
+            }
+         }
+      }
+   }
+   .party-management-district-section-center{
+      justify-content: center;
+      margin-bottom: 30px;
+   }
+   .nopadding{
+    border-bottom: 1px solid $gray;
+    &:nth-child(2){
+       border-top: none;
+    }
+    &:nth-child(even){
+       border-right: 1px solid $gray;
+    }
+}
+@media screen and (max-width: 415px) {
+   .party-management-district-section-main{
+      & .party-management-district-section{
+         &-aside{ 
+            & ul{
+               display: none;
+            }
+            & select{
+               display: block;
+            }
+         }
+         &-members{
+            padding:0px;
+            &-title{
+               display: none;
+            }
+            &-input{
+               flex-direction: column;
+               width: 100%;
+               margin-top: 10px;
+               &-filter{
+                  & input{
+                     width: 100%;
+                  }
+               }
+               & .select-control {
+                margin-left: 0px;
+                padding: 0 1px;
+                width: 100%;
+                    &:focus,
+                    &:active {
+                        outline: 0;
+                    }   
+                }
+                & .subsite-selectbox-arrow {
+                    right: 30px;
+                }
+               & select{
+                  margin-top: 10px;
+                  margin-left: 0px;
+               }
+            }
+            &-card{
+               margin-top: 0;
+               padding:20px;
+               border-left: 1px solid $gray;
+               & img{
+                width: 100px;
+                height: auto;
+               }
+               &-content{
+                  margin-left: 15px;
+                  margin-top: 10px;
+                  justify-content: flex-start;
+               }
+            }
+         }
+      }
+   }
+   .party-management-district-section-center{
+      justify-content: center;
+      margin-bottom: 30px;
+   }
+}
+}
+@media screen and (min-width:540px) and (max-width:736px){
+    .party-management-district-section-main{
+        & .party-management-district-section{
+            &-members{
+                &-input{
+                    &-filter{
+                        & input{
+                            width: 250px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

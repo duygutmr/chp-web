@@ -1,0 +1,45 @@
+// $font-size-root: null !default;
+// $font-size-base: 16px !default; // Assumes the browser default, typically `16px`
+// $font-size-sm: $font-size-base * 0.875 !default;
+// $font-size-lg: $font-size-base * 1.25 !default;
+
+// $font-weight-lighter: lighter !default;
+// $font-weight-light: 300 !default;
+// $font-weight-normal: 400 !default;
+// $font-weight-bold: 700 !default;
+// $font-weight-bolder: bolder !default;
+
+// $font-weight-base: $font-weight-normal !default;
+
+// $line-height-base: 1.5 !default;
+// $line-height-sm: 1.25 !default;
+// $line-height-lg: 2 !default;
+
+// $h1-font-size: 48px;
+// $h2-font-size: 36px;
+// $h3-font-size: 24px;
+// $h4-font-size: 16px;
+// $h5-font-size: 14px;
+// $h6-font-size: 13px;
+
+// // scss-docs-start font-sizes
+// $font-sizes: (
+//   1: $h1-font-size,
+//   2: $h2-font-size,
+//   3: $h3-font-size,
+//   4: $h4-font-size,
+//   5: $h5-font-size,
+//   6: $h6-font-size,
+// );
+// // scss-docs-end font-sizes
+
+// @each $key, $value in $font-sizes {
+//   .h#{$key},
+//   h#{$key} {
+//     font-size: $value !important;
+//   }
+// }
+
+// .subheader {
+//   font-size: 16px;
+// }

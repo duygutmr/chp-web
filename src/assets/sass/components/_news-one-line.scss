@@ -1,0 +1,25 @@
+.newsOneLine {
+    margin-top: 110px;
+    &-title {
+        line-height: 1.5;
+        text-align: left;
+        color: $black;
+        border-left: 2px solid $secondary;
+        padding: 0 20px;
+        margin-bottom: 40px;
+    }
+    &-box {
+        padding-left: 0;
+        border-left: 1px solid $gray;
+    }
+}
+@media screen and (max-width: 415px) {
+    .newsOneLine {
+        padding: 0 23px;
+        img {
+           width: 100px;
+           height: 56px; 
+        }
+    }
+
+}

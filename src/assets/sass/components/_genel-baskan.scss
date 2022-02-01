@@ -1,0 +1,292 @@
+.genel-baskan {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    &-general-info {
+        margin-left: 67px;
+        &-title {
+            font-size: 24px;
+            line-height: 1.5;
+            color: $primary;
+        }
+        &-degree {
+            font-family: Gotham-Bold;
+            font-size: 13px;
+            line-height: 1.46;
+            letter-spacing: 0.26px;
+            color: $secondary;
+            margin-bottom: 19px;
+        }
+        &-mail,
+        &-num {
+            font-family: Gotham-Medium;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1.46;
+            letter-spacing: 0.26px;
+            color: $black;
+        }
+    }
+    &-info {
+        background-color: #f3f3f3;
+        border: 1px solid $gray;
+        overflow: hidden;
+        
+        &-list {
+            padding-right: 0;
+            &-content {
+                padding-left: 0;
+                list-style: none;
+                padding-top: 45px;
+                border-right: 1px solid $gray;
+                li {
+                    font-family: Gotham-Bold;
+                    font-size: 13px;
+                    line-height: 1.46;
+                    letter-spacing: 0.26px;
+                    border-bottom: 1px solid $gray;
+                    padding: 15px 26px;
+                    cursor: pointer;
+                    a {
+                        text-decoration: none;
+                        color: $black;
+                        &.active {
+                            color: $primary;
+                            text-decoration: underline;
+                        }
+                    }
+                    
+                   
+                    &:last-child {
+                        border: none;
+                    }
+                }
+            }
+
+            &-mobile {
+                display: none;
+            }
+        }
+        &-content {
+            padding: 0;
+            &-title {
+                line-height: 1.67;
+                margin: 0;
+                color: $black;
+                padding: 17px 0 23px 20px;
+                border-bottom: 1px solid $gray;
+            }
+            &-text {
+                font-family: Gotham-Light;
+                font-size: 16px;
+                padding: 30px 20px;
+                line-height: 1.75;
+                color: #4a4a4a;
+                
+            }
+            .scheduler-col {
+                position: relative;
+                &:before {
+                  position: absolute;
+                  content: " ";
+                  top: 0;
+                  //a very large number for width
+                  width: 6000px;
+                  height: 900px;
+                }
+
+                &.is-right::before {
+                  //0 minus the padding-left/right on bootstrap col
+                  left: -15px;
+                  background-color: #f8f8f8;
+                  z-index: -99;
+                  padding: 20px ;
+                }
+            }
+        }
+        &-property {
+            .dec-image{
+                width: 400px;
+            }
+        }
+        &-speech {
+            .journal-allnews-title {
+                display: none;
+            }
+            .journal-page-allnews {
+                margin-top: 0;
+                padding: 0;
+            }
+           .journal-allnews-right {
+               display: none;
+           } 
+           .journal-allnews-news-border {
+               border-left: none;
+               &:first-child {
+                   border-top: none;
+               }
+           }
+        }
+    }
+    &-card {
+        margin: auto;
+        border-left: 1px solid $gray;
+        border-right: 1px solid $gray;
+    }
+    &-dropdown {
+        list-style: none;
+    }
+    &-arrow-down {
+        display: none;
+    }
+    &-form-title {
+        margin-bottom: 40px;
+        margin-top: 100px;
+        p {
+            font-family: Gotham-Light;
+        }
+    }
+    &-title-arrow-down {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .genel-baskan {
+        &-info {
+            padding-bottom: 50px;
+            &-content{
+                &-title {
+                    display: none;
+                }
+                &-text {
+                    padding: 30px 10px;
+                }
+            }
+        }
+        &-dropdown {
+            display: block;
+        }
+        &-info {
+            &-list {
+              &-mobile {
+                  display: block;
+                  position: relative;
+                  ul {
+                      margin: 0;
+                      padding-left: 0;
+                      list-style: none;    
+                      border: 1px solid $gray;       
+                      border-top: none;         
+                      li {
+                          p {
+                            color: #000;
+                            font-family: Gotham-Bold;
+                            font-size: 24px;
+                            padding: 15px 26px;
+                        }
+                      }
+                  }
+              }
+             ul {
+                 display: none;
+             }
+            }
+            &-property {
+                .dec-image{
+                    width: 275px;
+                }
+            }
+        }
+        &-arrow-down {
+            display: block;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }       
+        &-arrow-red {
+            display: none;
+        }       
+    }
+    .baskan-list-dropdown {
+        li {
+            padding: 15px 26px;
+            border-bottom: 1px solid $gray;
+            a {
+                text-decoration: none;
+                color: $primary;
+                font-family: Gotham-Light;
+            }
+            &:first-child {
+                border-top: 1px solid $gray;
+            }
+        }
+        li:hover {
+            background-color: $gray;
+            a {
+                text-decoration: underline;
+            }
+        }
+        
+
+    }
+    .baskan-list-dropdown {
+        display: none;
+        list-style: none;
+        padding-left: 0;
+        height: 424px;
+        overflow-x: auto;
+    }
+    .genel-baskan-info-list-mobile {
+        position: relative;
+    }
+    .genel-baskan-info-list-mobile ul li:hover .baskan-list-dropdown {
+        display: block;
+        border: none;
+    }
+    .genel-baskan-info-list-mobile ul li:hover .genel-baskan-arrow-red {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    .genel-baskan-info-list-mobile ul li:hover .genel-baskan-arrow-down {
+        display: none;
+    }
+    .genel-baskan-info-list-mobile ul:hover{
+        background-color: #fff;
+    }
+    .genel-baskan-info-list-mobile ul li:hover p{
+        color: $secondary;
+    }
+    ::-webkit-scrollbar-track {
+        background-color: #9bb1be;
+      }
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: #51778e;
+        border-radius: 5px;
+      }
+}
+@media screen and (max-width: 415px) {
+    .genel-baskan {
+        &-mobile {
+            flex-direction: column;
+        }
+        &-general {
+            &-info {
+                text-align: center;
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
+        &-card {
+            border: none;
+        }
+       
+    }
+    .genel-baskan-info-list-content:hover{
+        width: 100%;
+    }
+}

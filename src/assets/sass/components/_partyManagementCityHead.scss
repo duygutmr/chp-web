@@ -1,0 +1,70 @@
+.party-management-cityhead{
+    border-bottom: 1px solid $gray;
+    margin-bottom: 100px;
+   &-member{
+      display: flex;
+      align-items: center;
+      border: 1px solid $gray;
+      border-top: none;
+      border-bottom: none;
+      padding: 40px;
+      & .party-management-cityhead-member-group{
+         display: flex;
+         justify-content: space-between;
+      }
+      &-info{
+         margin-left: 50px;
+         & h3{
+            font-size: 24px;
+            line-height: 1.5;
+            color: $primary;
+            text-transform: uppercase;
+         }
+         & h6{
+            font-family: Gotham-Bold;
+            font-size: 13px;
+            line-height: 1.46;
+            letter-spacing: 0.26px;
+            color: $secondary;
+            margin-bottom: 19px;
+            text-transform: uppercase;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .party-management-cityhead{
+      &-member{
+         & .party-management-cityhead-member-group{
+            flex-direction: column;
+            align-items: flex-start;
+         }
+         &-info{
+            margin-left: 15px;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 415px) {
+   .party-management-cityhead{
+      margin-top: 70px;
+      &-member{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         border: none;
+         & .party-management-cityhead-member-group{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+         }
+         &-info{
+            text-align: center;
+            margin-left: 0px;
+         }
+      }
+   }
+}

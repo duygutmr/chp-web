@@ -1,0 +1,20 @@
+.publications-live-read {
+    background-image: url("/assets/img/Document_Bg.png");
+    max-height: 900px;
+    &-flip {
+        margin: auto;
+        display: block;
+        width: 960px;
+        height: 680px;
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+    &-logo {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 48px;
+        img {
+            width: 200px;
+        }
+    }
+}

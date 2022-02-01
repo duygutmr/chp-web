@@ -1,0 +1,77 @@
+.sub-slider-hero-section{
+   margin-top: 36px;
+   & .sub-slider{
+      &-card{
+         text-decoration: none;
+         &-image{
+            width: 100%;
+         }
+         &-content{
+            margin: 20px 0;
+            &-title{
+               font-family: Gotham-Bold;
+               line-height: 1.33;
+               text-align: left;
+               color: #000000;
+            }
+         }
+      }
+   }   
+} 
+.sub-slider-mobile-hidden{ display: none;}    
+
+@media screen and (max-width: 768px){  
+   .sub-slider-mobile-hidden{
+      display: block;
+      & .sub-slider-mobile{
+         margin-top: 36px;
+         &-card{
+            &-image{
+               width: 100%;
+               height: auto;
+            }
+            &-content{
+               padding: 40px;
+               padding-top: 0;
+               &-date{
+                  margin: 22px 87px 9px 23px;
+                  font-family: Gotham-Bold;
+                  line-height: 1.38;
+                  text-align: left;
+                  color: #dcdcdc;
+               }
+               &-title{
+                  width: 90%;
+                  font-size: 30px;
+                  margin: 9px 106px 0 23px;
+                  font-family: Gotham-Bold;
+                  line-height: 1.33;
+                  text-align: left;
+                  color: #000000;
+               }
+            }
+         }
+         a {
+            text-decoration: none;
+         }
+      }
+   } 
+   .sub-slider-hero-section{ display: none; }
+}
+
+@media screen and (max-width: 415px) {
+   .sub-slider-mobile-hidden{
+      display: block;
+      & .sub-slider-mobile{
+         &-card{
+            &-content{
+               padding: 10px;
+               padding-top: 0;
+               &-title{
+                  font-size: 20px;
+               }
+            }
+         }
+      }
+   } 
+}

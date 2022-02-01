@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}CHP{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    {% block styles %}
+    {% endblock %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/swiper.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    
+    {% block header %}
+    {% endblock %}
+</head>
+<body {% block body_attr %} {% endblock %} >
+{% block content %}
+{% endblock %}
+
+{% block javascripts %}
+{% endblock %}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="../assets/js/swiper.min.js"></script>
+<script src="../assets/js/response.min.js"></script>
+<script src="../assets/js/owl.carousel.min.js"></script>
+<script src="../assets/js/menu.js"></script>
+<script src="../assets/js/turkey-map.js"></script>
+<script src="../assets/js/slider.js"></script>
+<script src="../assets/js/scrollCalendar.js"></script>
+<script src="../assets/js/banner.js"></script>
+<script src="../assets/js/megaMenuHover.js"></script>
+<script src="../assets/js/pagination.js"></script>
+<script src="../assets/js/swiper.js"></script>
+<script src="../assets/js/search.js"></script>
+
+<script src="../assets/js/carousel.js"></script>
+<script>
+Response.create({
+    prop: "device-width"  // "width" "device-width" "height" "device-height" or "device-pixel-ratio"
+  , lazy: true // optional param - data attr contents lazyload rather than whole page at once
+});
+</script>
+
+
+<script>
+    svgturkiyeharitasi();
+  </script>
+</body>
+</html>

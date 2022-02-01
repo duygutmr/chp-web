@@ -1,0 +1,26 @@
+{% extends "Base.html" %}
+
+{% block title %}
+CHP Journal
+{% endblock %}
+
+
+{% block page_content %}
+   <div class="sub-management-news-section">
+      <div class="container">
+         {% include "components/JournalTitle.html" %}
+         <div class="sub-management-news">
+            {% include "components/subSiteManagementNews.html" %}      
+         </div>
+         <div class="container newsOneLine mt-5">
+            {% include "components/NewsOneLine.html" %}
+         </div>
+         <div class="container newsOneLine mt-5">
+             <h4 class="newsOneLine-title">En Çok Okunan Haberler</h4>
+             {% include "components/NewsOneLine.html" %}
+         </div> 
+      </div>
+   </div>
+   {% include "components/Journal-AllNews.html" %}
+   {% include "components/Newsletter-Subscription.html" %}
+{% endblock %}

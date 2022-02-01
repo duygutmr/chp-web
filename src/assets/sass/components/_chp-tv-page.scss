@@ -1,0 +1,593 @@
+.chp-tv-page {
+    overflow: hidden;
+    background-color: $primary;
+    border-top: 1px solid #2a667f;
+    &-title {
+        background-color: $primary;
+        &-border {
+            border-left: 1px solid #2a667f;
+            border-right: 1px solid #2a667f;
+            padding-top: 120px;
+        }
+
+        &-option {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+            &-category {
+                color: #fff;
+                font-family: Gotham-Medium;
+                font-size: 24px;
+                line-height: 3.33;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 280px;
+                position: relative;
+                &:hover {
+                    background-color: #fff;
+                    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+                }
+                &:hover p {
+                    color: $secondary;
+                    text-align: center;
+                }
+                &:hover > ul {
+                    display: block;
+                    background-color: #fff;
+                }
+            }
+           
+            &-list {
+                display: none;
+                background-color: #fff;
+                padding-left: 0;
+                list-style: none;
+                display: none;
+                position: absolute;
+                width: 280px;
+                height: 400px;
+                overflow-y: scroll;
+                top: 70px;
+                right: 0;
+                z-index: 2;
+
+               
+               
+                li {
+                    font-family: Gotham-Light;
+                    font-size: 24px;
+                    line-height: 3.33;
+                    color: $primary;
+                    padding-left: 30px;
+                    border-top: 1px solid $gray;
+                    &:hover {
+                        background-color: $gray;
+                    }
+                    &:hover a {
+                        text-decoration: underline;
+                    }
+                    a {
+                        color: $primary;
+                        text-decoration: none;
+                    }
+                }
+            }
+            ::-webkit-scrollbar-track {
+                background-color: #9bb1be;
+              }
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+            ::-webkit-scrollbar-thumb {
+                background-color: #51778e;
+                border-radius: 5px;
+              }
+        }
+        &-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 30px;
+            margin-right: 30px;
+        }
+    }
+    &-content {
+        background-color: $primary;
+    }
+    &-border {
+        border-bottom: none;
+    }
+    &-left-box {
+        background-image: linear-gradient(146deg, #003e5f, #00324b);
+        border-left: 1px solid #2a667f;
+        border-bottom: none;
+        padding: 80px 50px 30px 29px;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        &-title {
+            font-style: italic;
+            color: #fff;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        &-mobile {
+            .video-count {
+                display: none;
+            }
+        }
+    }
+    &-right-box {
+        &.soft {
+            background-color: #063d5d;
+        }
+        
+    }
+    &-slider-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #fff;
+        width: 46px;
+        height: 46px;
+        z-index: 3;
+        background-color: transparent;
+    }
+    &-image {
+        width: 296px;
+    }
+    &-slider-icons-box {
+        width: 95%;
+        margin-top: 50px;
+        padding-bottom: 30px;
+    }
+   
+    &-live {
+        background-color: #05314a;
+        padding: 62px 0 80px 0;
+        &-content {
+            display: flex;
+            &-text {
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                &-live {
+                    font-size: 24px;
+                    font-style: italic;
+                    background-color: $secondary;
+                    color: #fff;
+                    font-family: Gotham-Bold;
+                    padding: 5px 70px;
+                    margin-bottom: 24px;
+                }
+            }
+            &-circle {
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                background-color: #fff;
+                position: absolute;
+                left: 24px;
+                top: 10px;
+            }
+        }
+    }
+    &-sub {
+        background-color: #05314a;
+        padding-top: 20px;
+        a {
+            text-decoration: none;
+        }
+    }
+    &-num {
+        background-color: #05314a;
+        padding-bottom: 100px;
+    }
+    &-sorting {
+        background-color: #05314a;
+        padding-top: 19px;
+        &-unorder {
+            padding-left: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+        }
+        &-menu {
+            font-family: Gotham-Medium;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.43;
+            color: #fff;
+            position: relative;
+            display: flex;
+            padding: 10px 16px;
+            border: 1px solid $gray;
+            width: 296px;
+            display: flex;
+            justify-content: space-between;
+            &:hover &-list {
+                display: block;
+            }
+            &:hover .sort-icon-dark {
+                display: block;
+            }
+            &:hover .sort-icon-light {
+                display: none;
+            }
+            &:hover {
+                background-color: #fff;
+                color: #000;
+            }
+            &-list {
+                background-color: #fff;
+                padding-left: 0;
+                list-style: none;
+                display: none;
+                position: absolute;
+                width: 296px;
+                top: 40px;
+                left: -1px;
+                
+                z-index: 2;
+                li {
+                    padding: 10px;
+                    border-top: 1px solid $gray ;
+                    a {
+                        text-decoration: none;
+                        color:#000;
+                    }
+                }
+                
+            }
+        }
+    }
+    &-video {
+        background-color: #063d5d;
+        backdrop-filter: blur(9.6px);
+        padding: 120px 0 100px 0;
+
+        &-detail {
+            width: 800px;
+            height: 449px;
+        }
+        &-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-left: 16px;
+            max-width: 400px;
+            h2 {
+                font-family: Gotham-Bold;
+                line-height: 1.33;
+                color: #fff;
+            }
+            p {
+                line-height: 1.75;
+                color: rgba(255, 255, 255, 0.8);
+            }
+        }
+        &-share {
+            p {
+                font-family: Gotham-Medium;
+                font-size: 13px;
+                line-height: 1.46;
+                letter-spacing: 0.26px;
+                color: $gray;
+                margin-bottom: 20px;
+            }
+            &-icon {
+                display: flex;
+                span {
+                    padding: 10px;
+                    display: flex;
+                    align-items: center;
+                    border: 1px solid $gray;
+                    width: 46px;
+                    height: 46px;
+                }
+            }  
+        }
+        &-wrapper {
+            display: flex;
+        }
+    }
+    
+    .scheduler-col {
+        position: relative;
+        &:before {
+          position: absolute;
+          content: " ";
+          top: 0;
+          //a very large number for width
+          width: 6000px;
+          height: 100%;
+            border-left: 1px solid #2a667f;
+            border-right: 1px solid #2a667f;
+        }
+        &.is-left::before {
+          //0 minus the padding-left/right on bootstrap col
+          right: -15px;
+        }
+        &.is-right::before {
+          //0 minus the padding-left/right on bootstrap col
+          left: -15px;
+          background-color: #05314a;
+          
+        }
+        &.is-right-soft::before {
+          //0 minus the padding-left/right on bootstrap col
+          left: -15px;
+          background-color: $primary;
+          
+        }
+    }
+    &-area {
+        padding: 80px 0 30px 0;
+        a {
+            text-decoration: none;
+        }
+    }
+    &-show-videos {
+        display: flex;
+        align-items: center;
+    }
+    .owl-nav {
+        display: none;
+
+    }
+    .chp-tv-nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .owl-stage {
+        display: flex;
+    }
+    
+    &-boxes {
+        margin-bottom: 40px ;
+        position: relative;
+        &:hover .effect {
+            color: $secondary;
+        }
+        &:hover .chp-tv-right-side-time h4 {
+            text-decoration: underline;
+        }
+    }
+}
+.item-play-icon {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    img {
+        width: 48px;
+    }
+}
+.sort-icon-dark {
+    display: none;
+}
+.option-icon-dark {
+    display: none;
+}
+.chp-tv-page-title-option-category:hover .option-icon-light {
+    display: none;
+}
+.chp-tv-page-title-option-category:hover .option-icon-dark {
+    display: block;
+}
+.owl-dots {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .chp-tv-page {
+        &-video {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        &-image {
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .chp-tv-page {
+        &-mobile {
+            flex-direction: column;
+        }
+        &-arrow {
+            .video-count-lg {
+                display: none;
+            }
+        }
+        &-left-box {
+            width: 100%;
+            padding: 20px 0 35px 0;
+            margin-left: 0;
+            flex-direction: row;
+            align-items: center;
+            border-bottom: 1px solid #2a667f;
+            border-left: none;
+            &-mobile {
+                .video-count {
+                    display: block;
+                }
+            }
+                
+        }
+        &-title-content {
+            margin-right: 20px;
+        }
+        &-title-border {
+            padding-top: 90px;
+        }
+        &-slider-icons-box {
+            width: 100%;
+        }
+        &-live {
+            padding-bottom: 25px;
+            &-content {
+                flex-direction: column;
+                width: 100%;
+                padding-bottom: 59px ;
+                margin-left: 0;
+            &-live {
+                img {
+                    width: 100%;
+                }
+            }
+            &-text {
+                width: 100%;
+                padding: 0 15px;
+            }
+            &-info {
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+            }
+        }
+    }
+    &-video {
+        padding-left: 0;
+        padding-right: 0;
+        &-content {
+            padding-top: 30px;
+            padding-left: 0;
+        }
+        &-detail {
+            width: 600px;
+            height: 300px;
+        }
+        &-wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+        &-content {
+            max-width: 100%;
+        }
+    }
+    .scheduler-col {
+        &.is-right::before,
+        &.is-right-soft::before {
+          left: -100px;          
+        }
+    }
+    &-image {
+        width: 100%;
+    }
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .chp-tv-page {
+        &-title-content {
+            h1 {
+                font-size: 30px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 540px) {
+    .chp-tv-page {
+        &-video-detail {
+            width: 500px;
+        }
+        &-title-content {
+            h1 {
+                font-size: 24px;
+            }
+        }
+    }
+    .item-play-icon {
+        top: 140px;
+    }
+}
+@media screen and (max-width: 415px) {
+    .chp-tv-page {
+        &-title {
+            &-option-category {
+                
+               width: 100%;
+                p {
+                    display: none;
+                }
+                &:hover {
+                    background-color: transparent;
+                    box-shadow: none;
+                }
+            }
+           
+            &-option {
+                &-list {
+                    width: 250px;
+                }
+            }
+        }
+        &-left-box {
+            padding-right: 50px ;
+          
+        }
+        &-slider-icons-box {
+            width: 85%;
+        }
+        &-title-content {
+            margin-right: 11px;
+        }
+        &-area {
+            justify-content: center;
+        }
+        &-sub {
+            padding-bottom: 0;
+        }
+        &-sorting {
+            &-unorder {
+                justify-content: center;
+            }
+        }
+        &-mobile {
+            .video-count {
+                text-align: start;
+            }
+        }
+        &-show-videos {
+            p {
+                display: none;
+            }
+        }
+        &-video {
+            &-detail {
+                width: 330px;
+                height: 200px;
+            }
+            &-content {
+                padding-left: 16px;
+            }
+        }
+    }
+    .item-play-icon {
+        top: 90px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .chp-tv-page {
+        &-video {
+            &-detail {
+                width: 280px;
+                height: 175px;
+            }
+        }
+    }
+    .item-play-icon {
+        top: 75px;
+    }
+}
+

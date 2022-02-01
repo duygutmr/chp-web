@@ -1,0 +1,51 @@
+.pre-card-full {
+    margin-bottom: 60px;
+
+    &-content {
+        text-align: center;
+        margin-top: 20px;
+
+        &-title {
+            font-size: 48px;
+            line-height: 1;
+            color: $primary;
+            margin-bottom: 10px;
+        }
+        &-grade {
+            font-size: 16px;
+            color: $secondary;
+            margin-bottom: 24px;
+        }
+        &-text {
+            font-family: Gotham-Light;
+            line-height: 1.75;
+            color: $primary;
+            font-weight: 600;
+            &-second {
+                margin-top: 30px;
+                color: $primary;
+                line-height: 1.75;
+                font-family: Gotham-Light;
+            }
+        }
+    }
+    &-image {
+        border-radius: 50%;
+        object-fit: cover;
+        width: 190px;
+        height: 190px;
+        border: solid 10px rgba(185, 185, 185, 0.41);
+    }
+}
+@media screen and (max-width: 415px) {
+    .pre-card-full {
+        &-content {
+            &-title {
+                font-size: 24px;
+            }
+            &-grade {
+                line-height: 1.5;
+            }
+        }
+    }
+}

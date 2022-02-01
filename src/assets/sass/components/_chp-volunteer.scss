@@ -1,0 +1,105 @@
+.chp-volunteer {
+    background-color: #dcdcdc50;
+    &-title {
+        padding-top: 90px;
+        padding-bottom: 41px;
+        border-left: 1px solid $gray;
+        border-right: 1px solid $gray;
+        p {
+            padding-left: 24px;
+
+        }
+    }
+    &-border {
+        border-left: 1px solid $gray;
+        border-right: 1px solid $gray;
+    }
+    &-select {
+
+        display: flex;
+        flex-direction: column;
+        select {
+            -moz-appearance:none; /* Firefox */
+            -webkit-appearance:none; /* Safari and Chrome */
+            appearance:none;
+        }
+        label {
+            position: relative;
+        }
+    }
+    &-right {
+        border-left: 1px solid $gray;
+        height: 100%;
+        padding-bottom: 50px;
+        padding-top: 6px;
+        img {
+            width: 100%;
+        }
+        &-content {
+            padding: 27px 31px 0 23px;
+            p {
+                font-family: Gotham-Light;
+                font-size: 16px;
+                line-height: 1.75;
+                color: rgba(0, 0, 0, 0.8);
+            }
+        }
+    }
+    &-form {
+        padding: 51px 24px;
+
+        button {
+            width: 100%;
+            margin-bottom: 67px;
+            margin-top: 58px;
+        }
+        .form-check-label {
+            font-family: Gotham-Light;
+            font-size: 14px;
+            line-height: 1.86;
+            color: #000000;
+        }
+    }
+    .form-control {
+        padding: 12px;
+        border-radius: 0;
+    }
+    .form-label {
+        font-family: Gotham-Bold;
+        font-size: 13px;
+        line-height: 1.46;
+        color: #000000;
+    }
+    #exampleFormControlTextarea12 {
+        height: 204px;
+    }
+    .select-control {
+        height: 46px;
+        border: solid 1px $gray;
+        padding: 0 12px;
+        color: $gray;
+        &:focus,
+        &:active {
+            outline: 0;
+        }
+      
+    }
+    .right-check {
+        margin-left: 43px;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.selectbox-arrow {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+}

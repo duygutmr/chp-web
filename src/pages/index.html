@@ -1,0 +1,31 @@
+{% extends "Base.html" %}
+
+{% block title %}
+CHP
+{% endblock %}
+
+
+{% block page_content %}
+{% include "components/SliderCard.html" %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9">
+            {% include "components/Gundem.html" %}
+        </div>
+        <div class="col-lg-3">
+            {% include "components/GenelBaskanCard.html" %}
+        </div>
+    </div>
+</div>
+
+{% include "components/ChpTv.html" %}
+{% include "components/Invitation.html" %}
+{% include "components/ChpArticles.html" %}
+{% include "components/ChpSuggestion.html" %}
+{% include "components/GenelBaskanFullCard.html" %}
+{% include "components/Twitter.html" %}
+{% include "components/ChpCalendar.html" %}
+{% include "components/CurrentPublications.html" %}
+{% include "components/ChpBeMember.html" %}
+{% include "components/Newsletter-Subscription.html" %}
+{% endblock %}

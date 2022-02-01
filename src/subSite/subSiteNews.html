@@ -1,0 +1,28 @@
+{% extends "SubSiteBase.html" %}
+
+{% block title %}
+CHP Sub Site News
+{% endblock %}
+
+
+{% block page_content %}
+<div class="sub-management-news-section">
+   <div class="container">        
+      <div class="sub-management-news-section-content">
+         {% include "components/subSiteManagementTitle.html" %}
+         {% include "components/subSiteNewsShare.html" %}
+      </div>
+    </div>
+    <div class="sub-management-news">
+        <div class="container">
+            {% include "components/subSiteManagementNews.html" %}  
+        </div>
+        <div class="container newsOneLine mt-5">
+            {% include "components/NewsOneLine.html" %}  
+            {% include "components/NewsOneLine.html" %}   
+            {% include "components/NewsOneLine.html" %} 
+        </div> 
+    </div>
+</div>
+   {% include "components/subSiteSubscription.html" %}
+{% endblock %} 

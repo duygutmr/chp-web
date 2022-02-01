@@ -1,0 +1,166 @@
+//.contact-page-section img{
+//   width: 100%;
+//   height: auto;
+//}
+
+.contact-page-section iframe{
+   width: 100%;
+   height: 727px;
+}
+
+.contact-page-card{
+   position: absolute;
+   top: 150px;
+   right: 200px;
+   background-color: #fff;
+   width: 400px;
+   height: 480px;
+
+   &-content{
+      & .contact-card-select{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background-color: #f8f8f8;
+         height: 90px;
+         position: relative;
+            select {
+                -moz-appearance:none; /* Firefox */
+                -webkit-appearance:none; /* Safari and Chrome */
+                appearance:none;
+            }
+            & .subsite-selectbox-arrow {
+                position: absolute;
+                right: 35px;
+                bottom: 33px;
+            }
+            & .select-control {
+                width: 360px;
+                height: 46px;
+                border: solid 1px $gray;
+                padding: 0 10px;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 1.43;
+                text-indent: 15px;
+                &:focus,
+                &:active {
+                    outline: 0;
+                }   
+          }
+      }
+      & .contact-card-info{
+         margin-left: 20px;
+         > div{
+            margin-top:10px;
+            & img{
+               margin-right: 10px;
+               object-fit: contain;
+            }
+            & h6{
+               color: #000;
+               font-family: Gotham-Bold;
+               line-height: 1.46;
+               letter-spacing: 0.26px;
+               margin-top: 5px;
+               font-size: 13px;
+            }
+            & p{
+               line-height: 1.64;
+               margin-left: 40px;
+               margin-top: -5px;
+               font-size: 14px;
+            }
+            & a{
+               margin-left: 40px;
+               line-height: 1.64;
+               color: #e03997;
+               font-size: 14px;
+            }
+            &:first-child{
+               margin-top: 10px;
+            }
+         }
+      }
+   }
+}
+
+.contact-page-card-mobile{ display: none; }
+
+@media screen and (max-width: 768px) {
+   .contact-page-section{
+      display: none;    
+   }
+   .contact-page-card{
+      display: none; 
+   }
+   .contact-page-card-mobile{
+      display: block;
+      margin-top: 50px;
+      width: 90%;
+      &-title{
+         display: flex;
+         align-items: center;
+         & h2{
+            line-height: 1.33;
+            font-size: 36px;
+            border-left: 2px solid $secondary;
+            padding-left: 10px;
+            margin-bottom: 30px;
+         }
+      }
+      & .contact-page-card-content{
+         border: 1px solid $gray;
+         & .contact-card-select{
+            background:none;
+            border-bottom: 1px solid $gray;
+            background-color: #f8f8f8;
+            padding-left: 20px;
+            padding-right: 20px;
+            & select{
+               width: 100%;
+            }
+         }
+         & .contact-card-info:last-child{
+            margin-bottom: 10px;
+         }
+      }
+      & h6{
+         color: #000;
+         line-height: 1.46;
+         letter-spacing: 0.26px;
+         font-size: 13px;
+         text-align: center;
+         margin-top: 12px;
+         &:hover{
+            cursor: pointer;
+         }
+      }
+   }
+   select {
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+    }
+    .select-control {
+        width: 360px;
+        height: 46px;
+        border: solid 1px $gray;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.43;
+        text-indent: 15px;
+        &:focus,
+        &:active {
+            outline: 0;
+        }   
+    }
+    .subsite-selectbox-arrow {
+        position: absolute;
+        right: 35px;
+        bottom: 28px;
+    }
+}
+@media screen and (max-width: 415px) {
+   
+}

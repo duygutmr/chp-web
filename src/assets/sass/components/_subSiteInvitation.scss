@@ -1,0 +1,181 @@
+.sub-invitation-section{
+   margin-top: 80px;
+   margin-bottom: 80px;
+   &-content{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      & .sub-invitation{
+         background-image: url("/assets/img/subSitegokyuzu.png");
+         background-repeat: no-repeat;
+         background-size: cover;
+         &-content{
+            &-image img{
+               width: 100%;
+               height: 250px;
+               padding: 12px 20px 10px 20px;
+            }
+            &-text{
+               margin-left: 20px;
+               & h2{
+                  color: $primary;
+                  margin-top: 25px;
+                  font-size: 48px;
+                  font-family: Gotham-Bold;
+                  line-height: 1.25;
+               }
+               & h6{
+                  color: $secondary;
+                  margin-top: 40px;
+                  font-family: Gotham-Bold;
+                  line-height: 2.14;
+                  text-decoration: underline;
+                  &:hover{
+                     cursor: pointer;
+                  }
+               }
+            }
+         }
+      }
+      & .activity-report{
+         background-color: $primary;
+         text-align: center;
+         width: 290px;
+         height: 250px;
+         &-content{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 16px;
+            padding: 35px 16px 16px;
+            border: 1px solid white;
+            & h4{
+               margin-top: -10px;
+               font-family: Gotham-Bold;
+               color:white;
+            }
+            & h6{
+               margin: 35px 10px 0;
+               color:white;
+               text-decoration: underline;
+               &:hover{
+               cursor: pointer;
+               }
+            }
+         }
+      }
+   }
+}
+
+@media screen and (width: 1024px) {
+    .sub-invitation-section{
+       margin-top: 100px;
+       margin-bottom: 100px;
+       &-content{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          & .sub-invitation{
+             width: 100%;
+             &-content{
+                &-image img{
+                   width: 160px;
+                   height: 200px;
+                   padding: 12px 20px 10px 20px;
+                }
+                &-text{
+                   margin-left: 10px;
+                   & h2{
+                      font-size: 40px;
+                   }
+                   & h6{
+                      margin-top: 30px;
+                      font-size: 14px;
+                   }
+                }
+             }
+          }
+          & .activity-report{
+             display: none;
+          }
+       }
+    }
+ }
+
+@media screen and (max-width: 768px) {
+   .sub-invitation-section{
+      margin-top: 100px;
+      margin-bottom: 100px;
+      &-content{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         & .sub-invitation{
+            width: 100%;
+            &-content{
+               &-image img{
+                  width: 160px;
+                  height: 200px;
+                  padding: 12px 20px 10px 20px;
+               }
+               &-text{
+                  margin-left: 10px;
+                  & h2{
+                     font-size: 40px;
+                  }
+                  & h6{
+                     margin-top: 30px;
+                     font-size: 14px;
+                  }
+               }
+            }
+         }
+         & .activity-report{
+            display: none;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 415px) {
+   .sub-invitation-section{
+      margin-top: 100px;
+      margin-bottom: 100px;
+      &-content{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         & .sub-invitation{
+            width: 100%;
+            &-content{
+               &-image img{
+                  display: none;
+               }
+               &-text{
+                  margin-left: 0px;
+                  text-align: center;
+                  & h2{
+                     font-size: 25px;
+                     line-height: 1.6;
+                  }
+                  & h6{
+                     margin-top: 20px;
+                     font-size: 14px;
+                  }
+               }
+            }
+         }
+         & .activity-report{
+            display: block;
+            margin-top: 70px;
+            &-content{
+               flex-direction: column;
+               align-items: center;
+               justify-content: center;
+               padding: 30px;
+            }
+         }
+      }
+   }
+}

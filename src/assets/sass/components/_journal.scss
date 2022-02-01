@@ -1,0 +1,157 @@
+.journal-titles {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    border-left: 2px solid $secondary;
+    padding: 10px 0 0 24px;
+    margin-bottom: 30px;
+
+    h1,
+    a {
+        color: $primary;
+        font-family: Gotham-Bold;
+        line-height: 1.38;
+        letter-spacing: 3.2px;  
+    }
+    a {
+        text-decoration: none;
+    }
+    
+    &-show {
+        &:hover .arrow {
+            display: block;
+            transition: 2s;
+        }
+    }
+}
+.arrow {
+    display: none;
+    margin-left: 15px;
+}
+.journal {
+    &-image {
+        object-fit: cover;
+    }
+    &-blocks {
+        padding-right: 16px;
+        padding-left: 0;
+        border-left: 1px solid $gray;
+        color: #000;
+        text-decoration: none;
+        &:hover {
+            .date{
+                color: $secondary;
+            }
+        }
+
+        &-date {
+            padding: 16px 0 40px 20px;
+        }  
+
+        &:hover {
+            text-decoration: none;
+        }
+        &:hover .subtitle{
+           color: $primary;
+        }
+    }
+    &-mobile {
+        display: none;
+    }
+    &-blocks:nth-child(3n) {
+        padding-right: 10px;
+    }
+    &-section {
+        padding-top: 30px;
+    }
+}
+.subtitle {
+    font-size: 16px;
+    font-family: Gotham-Bold;
+    line-height: 1.38;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+    .journal {
+        &-image {
+            width: 232px;
+            height: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .journal {
+        padding-top: 80px;
+        border-right:1px solid $gray;
+        border-left:1px solid $gray;
+        &-section {
+            margin-top: 20px;
+        }
+        &-titles {
+            padding: 0 0 0 24px;
+        }
+        
+        &-blocks:nth-child(even) {
+            padding-right: 0;
+        }
+        &-section {
+            padding-top: 80px;
+        }
+        &-image {
+            width: 296px;
+            height: 176px;
+        }
+    }
+
+}
+@media screen and (max-width: 540px) {
+    .journal {
+        &-blocks {
+            display: flex;
+            padding-right: 0;
+            border-left: none;
+            margin-bottom: 40px;
+            &-date {
+                display: flex;
+                flex-flow: column-reverse;
+                padding: 0 10px 0 11px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 415px) {
+    .journal {
+        border-right: none;
+        &-section {
+            border-left: 1px solid $gray;
+            padding-top: 0;
+        }
+        &-image {
+            width: 100px;
+            height: 56px;
+        }
+       
+        &-titles {
+            margin-bottom: 30px;
+            h2 {
+                padding-left: 24px;
+            }
+            &-show {
+                display: none !important;
+            }
+        }
+        &-news {
+            border-right: none;
+            margin-bottom: 100px;
+        }
+    }
+    .subtitle {
+        font-size: 14px;
+        margin: 0;
+    }
+}
+
+

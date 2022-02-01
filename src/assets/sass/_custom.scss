@@ -1,0 +1,113 @@
+
+@font-face {
+  font-family: 'Gotham-Bold';
+  src:url("../fonts/gotham/Gotham-Bold-TR.woff2") format("woff2"),
+      url("../fonts/gotham/Gotham-Bold-TR.woff") format("woff");
+      h1,h2,h3,h4,h5,h6,p,label{
+        margin-bottom: 0 !important;
+      }
+}
+@font-face {
+  font-family: 'Gotham-Medium';
+  src:url("../fonts/gotham/Gotham-Medium-TR.woff2") format("woff2"),
+      url("../fonts/gotham/Gotham-Medium-TR.woff") format("woff");
+      h1,h2,h3,h4,h5,h6,p,label{
+        margin-bottom: 0 !important;
+      }
+}
+@font-face {
+  font-family: 'Gotham-Thin';
+  src:url("../fonts/gotham/Gotham-Thin-TR.woff2") format("woff2"),
+      url("../fonts/gotham/Gotham-Thin-TR.woff") format("woff");
+      h1,h2,h3,h4,h5,h6,p,label{
+        margin-bottom: 0 !important;
+      }
+}
+@font-face {
+  font-family: 'Gotham-Light';
+  src:url("../fonts/gotham/Gotham-Light-TR.woff2") format("woff2"),
+      url("../fonts/gotham/Gotham-Light-TR.woff") format("woff");
+      h1,h2,h3,h4,h5,h6,p,label{
+        margin-bottom: 0 !important;
+      }
+}
+
+h1 {
+  font-family: Gotham-Bold;
+  color: $black;
+}
+
+h2 {
+  font-family: Gotham-Bold;
+  color: $primary;
+}
+
+h3 {
+  font-family: Gotham-Bold;
+  color: $primary;
+}
+
+h4 {
+  font-family: Gotham-Bold;
+  color: $black;
+}
+
+h5 {
+  font-family: Gotham-Bold;
+  color: $primary;
+}
+
+h6 {
+  font-family: Gotham-Bold;
+  color: $primary;
+}
+p {
+  font-family: Gotham-Light;
+}
+
+.primary-text {
+  font-family: Gotham-Light;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1.75;
+}
+
+.red-header {
+  color: $secondary;
+  font-family: Gotham-Bold;
+  line-height: 1.54;
+
+  &.sub {
+    font-size: 14px;
+  }
+
+  &.paragraph {
+    font-size: 13px;
+  }
+}
+
+.sub-header {
+  line-height: 1.75;
+  font-size: 16px;
+  color: $black;
+}
+
+.date {
+  font-family: Gotham-Bold;
+  font-size: 14px;
+  line-height: 1.57;
+  color: $gray;
+  margin: 0;
+}
+
+.effect {
+  &:hover {
+    color: $secondary;
+  }
+}
+
+.title-effect {
+  cursor: pointer;
+  &:hover {
+    color: $primary;
+  }
+}

@@ -1,0 +1,150 @@
+.chp-tv {
+    background-image: url("../img/chp-tv/chptv-overlay.png"), url("../img/chp-tv/chptv-back.png");
+    background-size: cover;
+    margin-bottom: 100px;
+    a {
+        text-decoration: none;
+    }
+
+    &-content {
+        padding: 60px 10px 40px 5px;
+        
+    .view {
+        line-height: 1.38;
+        letter-spacing: 3.2px;
+    }
+    }
+    &-full {
+        padding-bottom: 100px;
+        align-items: flex-start;
+    }
+    &-title {
+        color: #fff;
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 1.25;
+        margin-top: 25px;
+
+        &-show {
+            align-items: baseline;
+            a {
+                color: #fff;
+            }
+        }
+    }
+    &-subtitle {
+        font-family: Gotham-Bold;
+        font-size: 16px;
+        line-height: 1.38;
+        letter-spacing: 3.2px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        &:hover .arrow {
+            display: block;
+            transition-duration: 2s;
+        }
+      
+    }
+    &-video {
+        position: relative;
+        &-play {
+            position: absolute;
+            left: 47%;
+            top: 40%;
+        }
+    }
+    &-box {
+        position: relative;
+        margin-bottom: 40px;
+        &-play {
+            position: absolute;
+            top: 80px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            &-big {
+                position: absolute;
+                top: 160px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    &-hour {
+        background-color: $secondary;
+        padding: 0 12px 0 13px;
+        position: absolute;
+        left: 25px;
+        top: 10px;
+
+        &-big {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            background-color: $secondary;
+            padding: 0 12px 0 13px;
+        }
+        &-text {
+            color: #fff;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 2.08;
+        }
+    }
+    &-right-side {
+        &-image {
+            width: 100%;
+            
+        }
+        &-time {
+            padding: 16px 10px 10px 0;
+            a {
+                text-decoration: none;
+            }
+            h4 {
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 1.38;
+                color: #ffffff;
+                margin-top: 14px;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+.main {
+    border-left: 2px solid $secondary;
+    margin: 0;
+    padding: 0;
+}
+@media screen and (max-width: 768px) {
+    .chp-tv {
+        &-right-side {
+            margin-bottom: 60px;
+        }
+    }
+}
+@media screen and (max-width: 415px) {
+    .chp-tv {
+        &-mobile {
+            display: none;
+        }
+        &-title-show {
+            display: none !important;
+        }
+        &-content {
+            padding-left: 30px;
+        }
+        &-right-side-time {
+            margin-bottom: 37px;
+            padding-top: 12px;
+            padding-left: 10px;
+        }
+        &-full {
+            padding-bottom: 0;
+        }
+    }
+}

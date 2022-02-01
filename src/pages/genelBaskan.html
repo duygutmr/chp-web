@@ -1,0 +1,33 @@
+{% extends "Base.html" %}
+
+{% block title %}
+CHP Contact
+{% endblock %}
+
+
+{% block page_content %}
+<div class="container">
+    <div class="row align-items-center genel-baskan-card">
+        <div class="col-lg-9">
+            {% include "components/GenelBaskanCardPage.html" %}
+        </div>
+        <div class="col-lg-3">
+            {% include "components/SocialMediaIconCircle.html" %}
+        </div>
+        </div>
+</div>
+{% include "components/GenelBaskanInfo.html" %}
+<div class="genel-baskan-form-title">
+    <div class="container">
+        <div class="col-lg-6 mx-auto text-center">
+            <h1>Kemal Kılıçdaroğlu’na Sorun</h1>
+            <p>Tüm soru, görüş ve önerilerinizi aşağıdaki form yardımı ile bize iletebilirsiniz.
+                Konu hakkındaki cevap, vermiş olduğunuz e-posta adresine gönderilecektir.</p>
+        </div>
+    </div>
+</div>
+{% include "components/form.html" %}
+{% include "components/Newsletter-Subscription.html" %}
+
+
+{% endblock %}

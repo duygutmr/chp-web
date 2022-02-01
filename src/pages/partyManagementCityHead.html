@@ -1,0 +1,21 @@
+{% extends "Base.html" %}
+
+{% block title %}
+CHP Party Management City Head
+{% endblock %}
+
+
+{% block page_content %}
+   {% include "components/partyManagementCityHead.html" %}
+   <div class="genel-baskan-form-title">
+      <div class="container">
+         <div class="col-lg-6 mx-auto text-center">
+            <h1>Mesaj Gönderin</h1>
+            <p>Tüm soru, görüş ve önerilerinizi aşağıdaki form yardımı ile bize iletebilirsiniz.
+                  Konu hakkındaki cevap, vermiş olduğunuz e-posta adresine gönderilecektir.</p>
+         </div>
+      </div>
+   </div>
+   {% include "components/form.html" %}
+   {% include "components/Newsletter-Subscription.html" %}
+{% endblock %}

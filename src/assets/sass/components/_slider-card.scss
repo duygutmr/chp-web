@@ -1,0 +1,140 @@
+.slider{
+    min-height: 300px;
+    .slider-item {
+        display: none;
+        &.active{
+            display: block;
+        }
+    }    
+}
+
+.slider-card {
+    padding-bottom: 165px;
+ 	    position: relative;
+	    &-box {
+            padding: 0;
+            margin: 0 10px;
+            display: flex;
+            position: absolute;
+            top: -96px;
+            border-top: 8px solid rgba(255, 255, 255, 0.253);
+        }
+      &-news {
+        border: solid 1px $gray;
+        background-color: #fff;
+        border-left: solid 2px $secondary;
+        min-height: 255px;
+        max-height: 300px;
+        padding: 20px 0;
+        width: 100%;
+            	    }
+    &-icons-first,
+    &-icons-second {
+        height: 88px;
+        width: 88px;
+        background-color: $primary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    &-icons-first {
+        margin-bottom: 1px;
+    }
+
+    &-date {
+        padding: 24px 0 0px 50px;
+    }
+    &-mobile {
+        display: none;
+    }
+    &-news {
+        a {
+            text-decoration: none;
+        }
+    }
+
+}
+.title {
+    font-weight: bolder;
+    font-size: 36px;
+    letter-spacing: 0.26px;
+    padding:0 30px 0 50px;
+}
+.news-with-card {
+    display: flex;
+}
+.swiper-base {
+    display: none;
+}
+.next-slide,
+.prev-slide {
+    border-right: 8px solid rgba(255, 255, 255, 0.253);
+}
+@media screen and (max-width: 1024px) {
+    .slider-card {
+        .next-slide, .prev-slide {
+            border-right: none;
+        }
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .slider {
+        display: none;
+    }
+    .swiper-container {
+        display: block;
+    }
+    .slider-card {
+        display: none;
+        &-box {
+            display: none;
+        }
+        &-icons {
+            display: none;
+        }
+        &-title {
+            font-size: 24px;
+            padding: 20px 30px 30px 30px;
+        }
+        &-mobile {
+            display: block;
+            position: relative;
+        }
+        &-news-details {
+            width: 100%;
+        }
+        &-news-mobile {
+            border: solid 1px #dcdcdc;
+            background-color: #fff;
+            border-left: solid 2px #ff0000;
+            a {
+                color: #000;
+                text-decoration: none;
+            }
+        }
+        &-date {
+            padding: 0 0 10px 30px;
+        }
+    }
+    .news-with-card {
+        display: block;
+    }
+}
+@media screen and (max-width: 415px) {
+    .slider-card {
+        &-news-mobile {
+            border-right: none;
+            border-bottom: none;
+        }
+        &-title {
+           
+            font-size: 15px;
+        }
+        .title {
+            padding:0 30px 0 24px;
+        }
+    }
+
+}

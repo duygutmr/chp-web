@@ -1,0 +1,176 @@
+.sub-newsdetail-section{
+   margin-top: 80px;
+   margin-bottom: 20px;
+   & h2{
+      font-family: Gotham-Bold;
+      line-height: 1.25;
+   }
+   & p{
+      font-family: Gotham-Bold;
+      line-height: 1.38;
+      color: $secondary;
+   }
+}
+
+.sub-news-section{
+   & .sub-news{
+      margin-top: 21px;
+      justify-content: space-between;
+      &-detail{
+         & img{
+            width: 100%;
+         }
+         &-content{
+            & p{
+               font-weight: 500;
+               line-height: 1.75;
+               color: #4a4a4a;
+               margin-top: 35px;             
+            }
+            & img{
+               margin-top: 70px;
+            }
+            & .newsdetail-video{
+               position: relative;
+               &-red{
+                  background-color: $secondary;
+                  width: 80px;
+                  height: 10px;
+               }
+               &-blue{
+                  background-color: $primary;
+                  width: 712px;
+                  height: 10px;
+               }
+               &-play{
+                  background: url("../svg/subsite-newsdetail-play.svg") no-repeat center;
+                  position: absolute;
+                  width: 59px;
+                  height: 59px;
+                  top: 230px;
+                  left: 300px;
+                  &:hover{
+                     cursor: pointer;
+                  }
+               }
+               & h5{
+                  border: 1px solid $gray;
+                  border-top: none;
+                  color: $primary;
+                  font-family: Gotham-Bold;
+                  line-height: 1.75;
+                  padding: 25px;
+               }
+            }
+            & .newsdetail-quote{
+               & h6{
+                  color: $primary;
+                  font-weight: 500;
+                  font-style: italic;
+                  line-height: 1.6;
+                  margin: 50px 0 200px 70px;
+                  padding-left: 15px;
+                  border-left: 5px solid $primary;
+               }              
+            }
+         }
+      }
+      &-similarnews{
+         & h4{
+            font-family: Gotham-Bold;
+            line-height: 1.5;
+            color: $primary;
+         }
+         &-card{
+            margin: 30px;
+            text-decoration: none;
+            & p{
+               line-height: 1.57;
+               color: #999999;
+            }
+            & h6{
+               color: black;
+               font-family: Gotham-Bold;
+               line-height: 1.38;
+               margin-top: 10px;
+            }
+         }
+      }  
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .sub-newsdetail-section{
+      & h2{
+         font-size: 24px;
+         line-height: 1.5;
+      }
+      &-inside-share{
+         display: none;
+      }
+   }
+
+   .sub-news-section{
+      margin-top: -30px;
+      & .sub-news{
+         margin-top: 40px;
+         flex-direction: column;    
+         &-detail{
+            & img{
+               width: 100%;
+            }
+            &-content{
+               & .newsdetail-video{
+                  &-play{
+                     top: 200px;
+                     left: 250px;
+                  }
+                  & h5{
+                     padding: 10px;
+                     font-size: 15px;
+                  }
+               }
+               & .newsdetail-quote h6{
+                  margin-left: 60px;
+               }              
+            }
+         }
+         &-similarnews{
+            display: none;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 415px) {
+   .sub-news-section{
+      & .sub-news{
+         margin-top: 40px;
+         flex-direction: column;
+         
+         &-detail{
+            & img{
+               width: 100%;
+            }
+            &-content{
+               & .newsdetail-video{
+                  &-play{
+                     top: 130px;
+                     left: 130px;
+                  }
+                  & h5{
+                     padding: 10px;
+                     font-size: 15px;
+                  }
+               }
+               & .newsdetail-quote h6{
+                  margin-left: 0;
+               }              
+            }
+         }
+         &-similarnews{
+            display: none;
+         }
+      }
+   }
+}

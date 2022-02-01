@@ -1,0 +1,67 @@
+.header-banner {
+    background-image: url("../img/gokyuzu.png");
+    &-content {
+        border: 4px solid #fff;
+        border-bottom: none;
+        &-bigTitle {
+            font-family: Gotham-Bold;
+            font-size: 96px;
+            line-height: 1.37;
+            color: #ffffff;
+            text-align: center;
+        }
+        &-title {
+            font-family: Gotham-Bold;
+            font-size: 36px;
+            line-height: 1.33;
+            color: $primary;
+            text-align: center;
+        }
+        &-text {
+            font-family: Gotham-Bold;
+            font-size: 16px;
+            line-height: 1.75;
+            letter-spacing: normal;
+            text-align: center;
+            color: #ffffff;
+            width: 50%;
+            margin: auto;
+          
+        }
+        &-btn {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 19px;
+            margin-top: 47px;
+            button {
+                font-family: Gotham-Bold;
+                font-size: 12px;
+                line-height: 1.33;
+                letter-spacing: 2.4px;
+            }
+        }
+    }
+    &-cancel {
+        display: flex;
+        justify-content: flex-end;
+        button {
+            width: 145px;
+            font-family: Gotham-Bold;
+            font-size: 14px;
+            letter-spacing: 2.8px;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .header-banner {
+        &-content {
+            h1 {
+                font-size: 50px;
+            }
+            p {
+                width: 75%;
+            }
+        }
+
+    }
+}

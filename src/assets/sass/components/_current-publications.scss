@@ -1,0 +1,292 @@
+.current-publications {
+    margin-bottom: 100px;
+    margin-top: 100px;
+    overflow: hidden;
+    &-titles {
+        margin-bottom: 40px;
+    }
+
+    &-title {
+        font-size: 48px;
+        font-weight: bold;
+        color: $primary;
+        border-left: 2px solid $secondary;
+        padding-left: 20px;
+    }
+    &-all-journal {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.38;
+        letter-spacing: 3.2px;
+        
+        a {
+            text-decoration: none;
+            color: $primary;
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+    &-left {
+        z-index: 3;
+        padding: 77px 0 74px 0;
+        img {
+            z-index: 3;
+        }
+        &-title {
+            font-size: 36px;
+            font-weight: bold;
+            line-height: 1.33;
+            color: #ffffff;
+        }
+        &-content {
+            margin-left: 16px;
+            z-index: 3;
+        }
+        &-text {
+            font-size: 16px;
+            line-height: 1.75;
+            color: #ffffff;
+            margin-top: 10px;
+            width: 270px;
+        }
+        &-btn {
+            width: 192px;
+            height: 46px;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 1.86;
+            z-index: 3;
+            font-family: Gotham-Bold;
+        }
+        &-all-journal {
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 2.14;
+            margin-left: 16px;
+            z-index: 3;
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+        &-second-line {
+            padding-bottom: 90px;
+            button {
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+                &:hover a {
+                    color: $primary;
+                }
+            }
+            &-under {
+                button {
+                    a {
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                    &:hover a {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+    &-right {
+        z-index: 3;
+        padding: 77px 0 74px 100px;
+        img {
+            z-index: 3;
+        }
+        &-title {
+            width: 296px;
+        }
+        &-btn {
+            background-color: $secondary;
+            width: 192px;
+            height: 46px;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 1.86;
+            z-index: 3;
+            font-family: Gotham-Bold;
+        }
+        &-all-journal {
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 2.14;
+            margin-left: 16px;
+            z-index: 3;
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+        &-second-line {
+            padding: 0 0 90px 110px;
+            button {
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+                &:hover a {
+                    color: $secondary;
+                }
+            }
+        }
+    }
+    img {
+        width: 192px;
+        height: 270px;
+    }
+    &-mobile {
+        display: none;
+    }
+    .scheduler-col {
+        position: relative;
+        &:before {
+          position: absolute;
+          content: " ";
+          top: 0;
+          //a very large number for width
+          width: 6000px;
+          height: 558px;
+        }
+        &.is-left::before {
+          right: -10px;
+          background: linear-gradient(0deg, rgba(255, 0, 0, 0.7), rgba(255, 0, 0, 0.7)), url("../img/yayin.png");
+        }
+        &.is-right::before {
+          left: -8px;
+          background-color: $primary;
+          background-image: url("../img/kitap.png");
+        }
+    }
+    &-pic {
+        z-index: 2;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .current-publications {
+        &-right {
+            padding-left: 10px;
+            &-title {
+                width: 100%;
+            }
+            &-second-line {
+                padding-left: 10px;
+            }
+        }
+        &-left-text {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .current-publications {
+        .scheduler-col {
+            display: none;
+        }
+        &-all-journal {
+            display: none;
+        }
+        &-left-text {
+            display: none;
+        }
+        &-mobile {
+            display: block;
+           
+        }
+        &-left {
+            background: linear-gradient(0deg, rgba(255, 0, 0, 0.7), rgba(255, 0, 0, 0.7)), url("../img/yayin.png");
+            padding-bottom: 0;
+        }
+        &-right {
+            background-color: $primary;
+      background-image: url("../img/kitap.png");
+      padding: 77px 0 74px 0;
+        }
+        &-box {
+            display: none;
+        }
+        &-right {
+            padding-right: 0;
+            &-title {
+                width: 115%;
+            }
+        }
+      
+        &-left-second-line {
+            margin-top: 110px;
+            &-under {
+                margin-top: 65px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 720px) {
+    .current-publications {
+        &-left {
+            &-second-line-under {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 540px) {
+    .current-publications {
+        &-left,
+        &-right {
+            padding: 10px;
+            img {
+                display: none;
+            }
+        }
+        &-left {
+            &-second-line,
+            &-second-line-under {
+                flex-direction: column;
+                align-items: flex-start !important;
+                margin-bottom: 30px;
+            }
+            &-second-line {
+                margin-top: 50px;
+            }
+            &-all-journal {
+                margin-top: 24px;
+                margin-left: 0;
+            }
+            &-title {
+                margin-top: 36px;
+            }
+        }
+        &-right {
+
+            &-title {
+                width: 80%;
+            }
+            &-all-journal {
+                margin-top: 24px;
+                margin-left: 0;
+            }
+        }
+        &-title {
+            font-size: 24px;
+        }
+    }
+}
+@media screen and (max-width: 415px) {
+    .current-publications {
+      
+        &-left {
+            &-second-line {
+                margin-bottom: 160px;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,78 @@
+.chp-be-member {
+    &-left {
+        background: linear-gradient(0deg, rgba(60, 175, 214, 0.63), rgba(60, 175, 214, 0.644)) ,url("../img/chp-articles/Baskan-halk.png");
+        background-size: cover;
+        height: 367px;
+        &-content {
+            padding: 60px 50px 59px 100px ;
+            &-title {
+                font-size: 36px;
+                font-weight: bold;
+                line-height: 1.39;
+            }
+            &-text {
+                font-size: 16px;
+                line-height: 1.75;
+                color: #ffffff;
+                font-family: Gotham-Light;
+            }
+            &-btn {
+                width: 50%;
+                border: solid 1px #fff;
+                color: #fff;
+                background-color: transparent;
+                font-size: 12px;
+                font-weight: bold;
+                line-height: 1.33;
+                letter-spacing: 2.4px;
+                height: 46px;
+                margin-top: 52px;
+                font-family: Gotham-Bold;
+            }
+        }
+    }
+    &-right {
+        background: linear-gradient(0deg, rgba(253, 186, 88, 0.63), rgba(253, 186, 88, 0.644)) ,url("../img/chp-articles/Baskan-halk.png");
+        background-size: cover;
+        height: 367px;
+        &-content {
+            padding: 60px 50px 59px 100px ;
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+    .chp-be-member {
+        &-right-content,
+        &-left-content {
+            //padding: 40px;
+            &-text {
+                padding-right: 78px;
+            }
+            &-btn {
+                width: 45%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 415px) {
+    .chp-be-member {
+        padding: 0 32px;
+        &-left, &-right{
+            background-position: center;
+        }
+        &-left-content,
+        &-right-content {
+            padding: 34px 24px;
+            &-text {
+                padding-right: 0px;
+            }
+            &-btn {
+                width: 100%;
+                margin-top: 52px;
+            }
+            &-title {
+                font-size: 24px;
+            }
+        }
+    }
+}

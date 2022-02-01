@@ -1,0 +1,31 @@
+.header-video-banner {
+    height: 450px;
+    &-content {
+        display: flex;
+        align-items: center;
+        padding: 34px 0 68px 0;
+        img {
+            height: 300px;
+        }
+        &-bigTitle {
+            font-family: Gotham-Bold;
+            font-size: 36px;
+            color: #ffffff;
+        }
+        &-title {
+            font-family: Gotham-Bold;
+            font-size: 24px;
+            line-height: 2;
+            color: $primary; 
+        }
+        &-text {
+            font-family: Gotham-Light;
+            font-size: 16px;
+            line-height: 1.75;
+            color: #ffffff;
+        }
+    }
+    &-text {
+        padding: 0 50px 0 16px;
+    }
+}
